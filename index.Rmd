@@ -1,0 +1,5 @@
+---
+title: "IDEA's page"
+site: distill::distill_website
+listing: posts
+---
