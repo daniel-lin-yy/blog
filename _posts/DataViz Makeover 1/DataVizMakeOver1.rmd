@@ -87,13 +87,20 @@ In the original visualization, a data table was included. This contributed to ch
 The background was kept a consistent white colour, while the colours of text and chart elements were selected to be of a striking colour. This is to allow the reader to more easily read and view the chart elements. Elements which are not key are kept to a lighter shade to reduce distraction from the main elements.
 
 **8. Elimination of legends**
+<br>
 The use of appropriate labels for the charts meant that there was no need for chart legends as readers can easily identify which age bands the chart elements belonged to. This helped to reduce chart clutter.
 
 **9. Consistent use of colours**
-Colours chose were consistently applied to elements relating to the same age groups to allow easy referencing by readers and to avoid confusion.
+<br>
+Colours chosen were consistently applied to elements relating to the same age groups to allow easy referencing by readers and to avoid confusion.
 
 
+# C. Proposed Data Visualization
+The proposed data visualization is found at the following link.<br>
+[Proposed Data Visualization](https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DataVizMakeover1_16118057789510/Dashboard?publish=yes)
 
+[![Proposed Data Visualization](ProposedVisualScreenshot.jpg)](https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DataVizMakeover1_16118057789510/Dashboard?publish=yes)
+<br>
 
 
 
