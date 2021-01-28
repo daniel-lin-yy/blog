@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = FALSE)
 Based on the original data visualization provided, the following are some comments on the clarity and aesthetics aspects of the visualization.
 
 ```{r pressure, echo=FALSE, fig.cap="Provided Data Visualization", out.width = '100%'}
-knitr::include_graphics("OrigGraph.png")
+knitr::include_graphics("OriginalGraph.jpg")
 ```
 
 ## Clarity
