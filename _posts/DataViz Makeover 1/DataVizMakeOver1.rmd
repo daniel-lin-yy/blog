@@ -50,6 +50,35 @@ knitr::include_graphics("OriginalGraph.jpg")
 | 4       | **Use of tick marks to demarcate age-bands on the horizontal axis.**<br>Tick marks are usually not used on a categorical scale but more for continuous scales. However in this chart, since a line graph was used for a categorical scale, tick marks were appropriately used to demarcate the age bands on the horizontal axis.                                                 |
 | 5       | **Good choice of font type, size and colour**<br>Font type, size and colour selected in the chart is an appropriate choice as it is easily read by the reader. However, to emphasize key messages of the chart, annotations of different size and colour could be used.           
 
+# B. Proposed Alternative Data Visualization
+
+## Sketch of Proposed Visualization
+
+```{r pressure1, echo=FALSE, fig.cap="Sketch of Proposed Data Visualization", out.width = '100%'}
+knitr::include_graphics("SketchOfGraph.jpeg")
+```
+
+## Advantages and Reasons for Proposed Design
+**1. Use of suitable Title and Write-up**
+<br>
+The title and write-up provides context to the visualization and helps the reader zoom in and focus on the key messages and relevant portions of the chart
+
+**2. Use of vertical axis and appropriate axes labels**
+<br>
+The inclusion of both axes and axes labels allows the reader to have clarity and understand what is depicted in the chart.
+
+**3. Data points between 2009 to 2019 provided**
+<br>
+The initial provided graph only provided a comparison between 2 years, 2009 and 2019. The increase observed between the 2 years could be a once off and it would not be possible to observe it there was a trend in the data. However, by including the years in between 2009 and 2019, trends in the data can be observed.
+
+**4. Appropriate use of Line Graphs**
+<br>
+The line graphs used in the top chart allows the reader to visualize trends more easily, since the lines present several data points as one continuous evolution over time. Bar charts were selected for the bottom chart to provide a more visual impact of the absolute numbers of residents in the workforce,for each of the age groups.
+
+**5. Use of annotations to highlight key points**
+<br>
+
+
 
 
 
