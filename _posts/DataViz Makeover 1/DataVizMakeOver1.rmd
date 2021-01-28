@@ -96,12 +96,39 @@ Colours chosen were consistently applied to elements relating to the same age gr
 
 
 # C. Proposed Data Visualization
-The proposed data visualization is found at the following link.<br>
-[Proposed Data Visualization](https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DataVizMakeover1_16118057789510/Dashboard?publish=yes)
-A screenshot of the visualization is as follow.
+The proposed data visualization is found at the following URL:<br>
+*https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DataVizMakeover1_16118057789510/Dashboard?publish=yes*
+<br><br>
+A **screenshot** of the visualization is as follow.<br>
 ![Screenshot of Proposed Data Visualization](ProposedVisualScreenshot.jpg)
 <br>
 
+# D. Preparation of Data Visualization
+
+## (1) Derivation of Data from MOM's website
+The data used for the visualization was obtained from the Ministry of Manpower's (MOM) website (https://stats.mom.gov.sg/Pages/Labour-Force-Tables2019.aspx). Of the tables provided, Table 7 (Resident Labour Force Aged Fifteen Years and Over by Age and Sex, 2009 - 2019 (June)) was used for the data visualisation.
+<br>
+![Screenshot of Table 7](Table7.jpg)
+
+## (2) Data cleaning and preparation
+
+Table 7's data provided the number of residents who were in the resident labour force by 5 year age bands. To prepare the data for analysis, empty columns in the table were removed, and data for the desired age bands (i.e. 15-24yrs, 25-54yrs, 55yrs and above) were derived.
+A screenshot of the derived table and relevant formulae are as shown below.<br>
+![Screenshot of Derivation of Data for Desired Age Bands](DerivationAbsNo.jpg)
+The formula used are <br>
+P2 = =SUM(B2:C2) <br>
+Q2 = =SUM(D2:I2) <br>
+R2 = =SUM(J2:M2) <br>
+
+To derive the data for the second chart where Proportion of residents in the workforce for the respective age bands, the following is a screenshot of the derivation carried out.<br>
+![Screenshot of Derivation of Proportion for Desired Age Bands](DerivationProportion.jpg)
+<br>
+
+## (3) Import Data to Tableau
+
+The Excel spreadsheet with the created tables were imported in to Tableau as shown below.<br>
+![Screenshot of Data Imported to Tableau](ImportTableau.jpg)
+<br>
 
 
 

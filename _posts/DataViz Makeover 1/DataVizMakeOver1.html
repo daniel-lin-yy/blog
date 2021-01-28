@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["DataVizMakeOver1_files/anchor-4.2.2/anchor.min.js","DataVizMakeOver1_files/bowser-1.9.3/bowser.min.js","DataVizMakeOver1_files/distill-2.2.21/template.v2.js","DataVizMakeOver1_files/header-attrs-2.6/header-attrs.js","DataVizMakeOver1_files/jquery-1.11.3/jquery.min.js","DataVizMakeOver1_files/OrigGraph.emf","DataVizMakeOver1_files/OrigGraph.png","DataVizMakeOver1_files/OriginalGraph.jpg","DataVizMakeOver1_files/webcomponents-2.0.0/webcomponents.js","OrigGraph.png","OriginalGraph.jpg","ProposedVisualScreenshot.jpg","SketchOfGraph.jpeg"]}
+  {"type":"character","attributes":{},"value":["DataVizMakeOver1_files/anchor-4.2.2/anchor.min.js","DataVizMakeOver1_files/bowser-1.9.3/bowser.min.js","DataVizMakeOver1_files/distill-2.2.21/template.v2.js","DataVizMakeOver1_files/header-attrs-2.6/header-attrs.js","DataVizMakeOver1_files/jquery-1.11.3/jquery.min.js","DataVizMakeOver1_files/OrigGraph.emf","DataVizMakeOver1_files/OrigGraph.png","DataVizMakeOver1_files/OriginalGraph.jpg","DataVizMakeOver1_files/webcomponents-2.0.0/webcomponents.js","DerivationAbsNo.jpg","DerivationProportion.jpg","ImportTableau.jpg","OrigGraph.png","OriginalGraph.jpg","ProposedVisualScreenshot.jpg","SketchOfGraph.jpeg","Table7.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1548,7 +1548,15 @@ Figure 2: Sketch of Proposed Data Visualization
 <p><strong>8. Elimination of legends</strong> <br> The use of appropriate labels for the charts meant that there was no need for chart legends as readers can easily identify which age bands the chart elements belonged to. This helped to reduce chart clutter.</p>
 <p><strong>9. Consistent use of colours</strong> <br> Colours chosen were consistently applied to elements relating to the same age groups to allow easy referencing by readers and to avoid confusion.</p>
 <h1 id="c.-proposed-data-visualization">C. Proposed Data Visualization</h1>
-<p>The proposed data visualization is found at the following link.<br> <a href="https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DataVizMakeover1_16118057789510/Dashboard?publish=yes">Proposed Data Visualization</a> A screenshot of the visualization is as follow. <img src="ProposedVisualScreenshot.jpg" alt="Screenshot of Proposed Data Visualization" /> <br></p>
+<p>The proposed data visualization is found at the following URL:<br> <em><a href="https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DataVizMakeover1_16118057789510/Dashboard?publish=yes" class="uri">https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DataVizMakeover1_16118057789510/Dashboard?publish=yes</a></em> <br><br> A <strong>screenshot</strong> of the visualization is as follow.<br> <img src="ProposedVisualScreenshot.jpg" alt="Screenshot of Proposed Data Visualization" /> <br></p>
+<h1 id="d.-preparation-of-data-visualization">D. Preparation of Data Visualization</h1>
+<h2 id="derivation-of-data-from-moms-website">(1) Derivation of Data from MOM’s website</h2>
+<p>The data used for the visualization was obtained from the Ministry of Manpower’s (MOM) website (<a href="https://stats.mom.gov.sg/Pages/Labour-Force-Tables2019.aspx" class="uri">https://stats.mom.gov.sg/Pages/Labour-Force-Tables2019.aspx</a>). Of the tables provided, Table 7 (Resident Labour Force Aged Fifteen Years and Over by Age and Sex, 2009 - 2019 (June)) was used for the data visualisation. <br> <img src="Table7.jpg" alt="Screenshot of Table 7" /></p>
+<h2 id="data-cleaning-and-preparation">(2) Data cleaning and preparation</h2>
+<p>Table 7’s data provided the number of residents who were in the resident labour force by 5 year age bands. To prepare the data for analysis, empty columns in the table were removed, and data for the desired age bands (i.e. 15-24yrs, 25-54yrs, 55yrs and above) were derived. A screenshot of the derived table and relevant formulae are as shown below.<br> <img src="DerivationAbsNo.jpg" alt="Screenshot of Derivation of Data for Desired Age Bands" /> The formula used are <br> P2 = =SUM(B2:C2) <br> Q2 = =SUM(D2:I2) <br> R2 = =SUM(J2:M2) <br></p>
+<p>To derive the data for the second chart where Proportion of residents in the workforce for the respective age bands, the following is a screenshot of the derivation carried out.<br> <img src="DerivationProportion.jpg" alt="Screenshot of Derivation of Proportion for Desired Age Bands" /> <br></p>
+<h2 id="import-data-to-tableau">(3) Import Data to Tableau</h2>
+<p>The Excel spreadsheet with the created tables were imported in to Tableau as shown below.<br> <img src="ImportTableau.jpg" alt="Screenshot of Data Imported to Tableau" /> <br></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
