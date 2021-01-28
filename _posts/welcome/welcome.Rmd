@@ -6,7 +6,7 @@ description: |
 author:
   - name: Daniel Lin 
     url: https://example.com/norajones
-    affiliation: School of Information Systems, Singapore Management University
+    affiliation: School of Computing and Information Systems, Singapore Management University
     affiliation_url: https://www.smu.edu.sg/ 
 date: 01-04-2021
 output:
