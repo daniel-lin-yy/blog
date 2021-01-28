@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/DataViz Makeover 1/",
+    "title": "DataViz Makeover 1",
+    "description": "Welcome to our new blog, IDEA. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Daniel Lin",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-01-28",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-01-28T15:32:12+08:00",
+    "input_file": "DataVizMakeOver1.utf8.md"
+  },
+  {
     "path": "posts/2021-01-04-my-first-post/",
     "title": "My First Post",
     "description": "A short description of the post.",
