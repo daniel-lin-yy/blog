@@ -1,5 +1,5 @@
 ---
-title: "IDEA's page"
+title: "ISSS608 Visual Analytics"
 site: distill::distill_website
 listing: posts
 ---
