@@ -53,7 +53,6 @@ knitr::include_graphics("OriginalGraph.jpg")
 # B. Proposed Alternative Data Visualization
 
 ## Sketch of Proposed Visualization
-
 ```{r pressure1, echo=FALSE, fig.cap="Sketch of Proposed Data Visualization", out.width = '100%'}
 knitr::include_graphics("SketchOfGraph.jpeg")
 ```
@@ -77,6 +76,21 @@ The line graphs used in the top chart allows the reader to visualize trends more
 
 **5. Use of annotations to highlight key points**
 <br>
+Annotations in the chart were used to draw readers' attention to the key points mentioned in the write-up. This is to allow readers to quickly understand the focus of the charts.
+
+**6. Exclusion of Data Table**
+<br>
+In the original visualization, a data table was included. This contributed to chart clutter and reduced the clarity of the chart. In the proposed design, data tables were not included but important values were highlighted using annotations where necessary.
+
+**7. Selection of colours and fonts to facilitate the reading of charts**
+<br>
+The background was kept a consistent white colour, while the colours of text and chart elements were selected to be of a striking colour. This is to allow the reader to more easily read and view the chart elements. Elements which are not key are kept to a lighter shade to reduce distraction from the main elements.
+
+**8. Elimination of legends**
+The use of appropriate labels for the charts meant that there was no need for chart legends as readers can easily identify which age bands the chart elements belonged to. This helped to reduce chart clutter.
+
+**9. Consistent use of colours**
+Colours chose were consistently applied to elements relating to the same age groups to allow easy referencing by readers and to avoid confusion.
 
 
 
