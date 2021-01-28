@@ -171,7 +171,7 @@ The following is the final Line Graph prepared.
 ![FinalLineGraph](LineGraphFinal.jpg)
 <br>
 
-## Creation of Visualization - Bar Graphs
+## (5) Creation of Visualization - Bar Graphs
 
 On a separate sheet, Year was placed in the Columns field and (15-24),(25-54),(55 & above) were placed in the row field. However, to combine the 3 groups onto the same graph, (25-54) and (55 & above) were dragged to the vertical axis of (15-24) as shown.
 <br>
@@ -190,6 +190,30 @@ Following that, similar editing was done (as Line Graphs) to edit the title. The
 ![FinalBarChart](FinalBarChart.jpg)
 <br>
 
+## (6) Creation of Dashboard - Final Visualization
 
+Finally to create the eventual visual, the line graph (Proportion) and bar charts (Absolute) were placed onto the dashboard. One Text field was placed at the top for the Title and Write-Up for the visual and another Text field was placed at the bottom for the Source of the data. The final visual completed is as shown.
+<br>
+![FinalVisual](Dashboard.jpg)
+
+<br>
+
+# E. Major Observations from the Visualizations
+
+**(1) There was a trend in the data of Proportion of Resident Workforce among the age groups.**
+<br>
+Proportion of Resident Workforce among 25-54 year olds and those 55 years and above were observed to have a decreasing trend and increasing trend respectively from 2009 to 2019.
+<br> 
+With data from 2 years (2009 and 2019), the reader was only able to ascertain whether there was an increase or decrease in the proportion. With the data from every year between 2009 to 2019, trend data is now observed.
+<br><br>
+**(2) Actual numbers of 25-54 year olds were increasing while proportion was decreasing.**
+<br>
+While the proportion of resident workforce among the 25-54 year olds were decreasing, the actual numbers of the same were actually increasing (as observed in the bar charts).
+<br>
+This would not have been evident if actual figures of the resident workforce among this age group had not been charted and examined.
+<br><br>
+**(3) Increase in numbers of resident workforce among older age group is faster than that in the younger age groups.**
+<br>
+The bar chart also reveals that number of resident workforce among 55 years and above increased at a faster rate than the increase among the 25-54 years age group.
 
 
