@@ -133,8 +133,8 @@ The Excel spreadsheet with the created tables were imported in to Tableau as sho
 ## (4) Creation of Visualization - Line Graph
 
 After importing the data to Tableau, I started with the creation of the visualization for Proportion of Workforce.<br>
-* Years (named F1 here) was dragged to the Columns field
-* (15-24), (25-54), and (55&Above), which contained the proportion data, were dragged to the Rows field.
+* Years (named F1 here) was dragged to the Columns field <br>
+* (15-24), (25-54), and (55&Above), which contained the proportion data, were dragged to the Rows field. <br>
 * Measure Names was also placed in the Filters field and Colour panel.
 <br>
 The resulting chart is shown as follow.
@@ -142,8 +142,9 @@ The resulting chart is shown as follow.
 ![Screenshot of Proportion Chart Unedited](Proportion1.jpg)
 <br>
 To remove the legend, the line graphs needed to be labelled. This is done by
-* Bringing Measure Names onto the Label panel, and clicking on the Label panel
-* Indicating <Measure Names> in the Text field
+<br>
+* Bringing Measure Names onto the Label panel, and clicking on the Label panel <br>
+* Indicating <Measure Names> in the Text field <br>
 * Selecting Line Ends and checking Label End of Lines
 <br>
 The following is a screenshot of the step. 
@@ -151,8 +152,8 @@ The following is a screenshot of the step.
 ![Screenshot of Labelling of Lines](LabelMeasureNames.jpg)
 <br>
 The 2 end points of the line graphs were also annotated to allow the reader to easily view and to reinforce the points mentioned in the write-up. This is done by <br>
-* Right-clicking on the point
-* Select Annotate Mark
+* Right-clicking on the point <br>
+* Select Annotate Mark <br>
 * Input as shown below.
 <br>
 ![Screenshot of Annotation of Mark](AnnotateMark.jpg)
@@ -169,5 +170,26 @@ The following is the final Line Graph prepared.
 <br>
 ![FinalLineGraph](LineGraphFinal.jpg)
 <br>
+
+## Creation of Visualization - Bar Graphs
+
+On a separate sheet, Year was placed in the Columns field and (15-24),(25-54),(55 & above) were placed in the row field. However, to combine the 3 groups onto the same graph, (25-54) and (55 & above) were dragged to the vertical axis of (15-24) as shown.
+<br>
+![DragToCol](DragToCol.jpg)
+<br>
+The result is as shown.
+<br>
+![BarChart](BarChart.jpg)
+<br>
+Then Measure Names was placed in the Colour panel to provide a distinction between the various age bands. The result is as shown.
+<br>
+![MeasureNameColour](MeasureToColour.jpg)
+<br>
+Following that, similar editing was done (as Line Graphs) to edit the title. The final Bar Chart is as follows.
+<br>
+![FinalBarChart](FinalBarChart.jpg)
+<br>
+
+
 
 
