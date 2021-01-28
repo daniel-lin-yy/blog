@@ -98,8 +98,8 @@ Colours chosen were consistently applied to elements relating to the same age gr
 # C. Proposed Data Visualization
 The proposed data visualization is found at the following link.<br>
 [Proposed Data Visualization](https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DataVizMakeover1_16118057789510/Dashboard?publish=yes)
-
-[![Proposed Data Visualization](ProposedVisualScreenshot.jpg)](https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DataVizMakeover1_16118057789510/Dashboard?publish=yes)
+A screenshot of the visualization is as follow.
+![Screenshot of Proposed Data Visualization](ProposedVisualScreenshot.jpg)
 <br>
 
 
