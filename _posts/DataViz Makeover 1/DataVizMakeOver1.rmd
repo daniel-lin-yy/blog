@@ -126,9 +126,48 @@ To derive the data for the second chart where Proportion of residents in the wor
 
 ## (3) Import Data to Tableau
 
-The Excel spreadsheet with the created tables were imported in to Tableau as shown below.<br>
+The Excel spreadsheet with the created tables were imported in to Tableau as shown below.<br><br>
 ![Screenshot of Data Imported to Tableau](ImportTableau.jpg)
 <br>
 
+## (4) Creation of Visualization - Line Graph
+
+After importing the data to Tableau, I started with the creation of the visualization for Proportion of Workforce.<br>
+* Years (named F1 here) was dragged to the Columns field
+* (15-24), (25-54), and (55&Above), which contained the proportion data, were dragged to the Rows field.
+* Measure Names was also placed in the Filters field and Colour panel.
+<br>
+The resulting chart is shown as follow.
+<br>
+![Screenshot of Proportion Chart Unedited](Proportion1.jpg)
+<br>
+To remove the legend, the line graphs needed to be labelled. This is done by
+* Bringing Measure Names onto the Label panel, and clicking on the Label panel
+* Indicating <Measure Names> in the Text field
+* Selecting Line Ends and checking Label End of Lines
+<br>
+The following is a screenshot of the step. 
+<br>
+![Screenshot of Labelling of Lines](LabelMeasureNames.jpg)
+<br>
+The 2 end points of the line graphs were also annotated to allow the reader to easily view and to reinforce the points mentioned in the write-up. This is done by <br>
+* Right-clicking on the point
+* Select Annotate Mark
+* Input as shown below.
+<br>
+![Screenshot of Annotation of Mark](AnnotateMark.jpg)
+<br>
+The title is also updated as follows.
+<br>
+![Screenshot of Updating of Title](UpdateTitleLine.jpg)
+<br>
+Next was to fix the Proportion (vertical) axis to 100 to provide an indication of the proportion out of 100%. This is done by right clicking on the vertical axis and selecting Fixed in the dialog box as shown. 
+<br>
+![Fix Proportion Axis](FixPropAxis.jpg)
+<br>
+The following is the final Line Graph prepared. 
+<br>
+![FinalLineGraph](LineGraphFinal.jpg)
+<br>
 
 
