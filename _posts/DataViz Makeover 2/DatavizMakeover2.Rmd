@@ -217,3 +217,39 @@ knitr::include_graphics("D2_1_b.jpg")
 ```{r pressure15, echo=FALSE, fig.cap="Creation of Country field", out.width = '100%'}
 knitr::include_graphics("D2_1a.jpg")
 ```
+
+
+
+# E. Observations from the Proposed Data Visualization
+
+**1.    United Kingdom (UK) had the greatest receptivity towards COVID-19 vaccination**<br>
+From the figure below, it is observed that respondents from the UK were most inclined and receptive towards COVID-19 vaccination. France on the other hand, seemed to be the least receptive towards vaccination.
+
+
+```{r pressure16, echo=FALSE, fig.cap="Inclination of countries towards vaccination", out.width = '100%'}
+knitr::include_graphics("D5_1a.jpg")
+```
+**2.    Japan, not France, had the lowest proportion who strongly agreed that they were keen on vaccination**
+From the chart on the right, it would seem that Japan was the least receptive towards the COVID-19 vaccine because of the lowest proportion that agreed strongly to the statement that they were keen on vaccination. However, by inspecting the chart on the left (refer to the orange boxes), it is interesting to note that France was less receptive because of the much larger proportion who strongly disagreed compared to Japan's. Hence while Japan had a smaller proportion who strongly agreed, they also had a smaller proportion who strongly disagreed compared to France. This is likely arising from cultural differences whereby Japanese are less strong in their opinions compared to the French (with the proportion who are Neutral being twice that of the French).
+
+**3.    UK and Denmark had significantly higher proportion of respondents who strongly agreed that they were willing to be vaccinated**
+From the chart above (refer to red box), it is observed that UK and Denmark were significantly higher than the other countries at the 99% confidence interval. Countries in the blue region did not have proportions that were statistically different at the 99% confidence level, based on their confidence intervals.
+
+**4.    Worry of getting COVID does not seem to be a main reason for receptivity towards vaccination**
+From the screenshot below (referring to the blue boxes), countries who were the most receptive towards vaccination did not have very high proportion of respondents who strongly agreed that they were worried about getting COVID-19. On the contrary, Japan which was one of the least receptive, had the highest proportion who strongly agreed they were worried about getting COVID-19. Netherlands and Finland had the lowest proportion who strongly agreed they were worried but their receptivity towards vaccines appear to be among the more receptive countries.
+
+```{r pressure17, echo=FALSE, fig.cap="Vaccine receptivity and Worry of getting COVID-19", out.width = '100%'}
+knitr::include_graphics("D5_1b.jpg")
+```
+
+**5.    Worry about vaccine side effects seem to affect receptivity towards COVID-19 vaccination**
+From the chart below, it is observed that countries that are more receptive towards vaccination (such as UK, Denmark and Netherlands) have lower concerns towards vaccine side effects. This is evident from the lower proportion of respondents who strongly agreed to the statement that they are worried about vaccine side effects (refer to blue boxes).
+
+On the contrary, countries which are less receptive, have a higher proportion who strongly agreed that they were worried about vaccine side effects. These countries include France, Japan and Singapore.
+
+```{r pressure18, echo=FALSE, fig.cap="Vaccine receptivity and Worry of vaccine side effects", out.width = '100%'}
+knitr::include_graphics("D5_1c.jpg")
+```
+
+**6.    Confidence in health authorities providing effective vaccines seemed to be linked to vaccine receptivity**
+In the chart below, with focus on the blue boxes, countries which had the highest receptivity towards vaccination (i.e., Denmark and UK) saw a higher proportion of respondents who strongly agreed that they were confident on effective vaccines being provided. The converse is true as well for countries who were least receptive (e.g., Japan and France)
