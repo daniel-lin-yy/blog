@@ -253,3 +253,9 @@ knitr::include_graphics("D5_1c.jpg")
 
 **6.    Confidence in health authorities providing effective vaccines seemed to be linked to vaccine receptivity**
 In the chart below, with focus on the blue boxes, countries which had the highest receptivity towards vaccination (i.e., Denmark and UK) saw a higher proportion of respondents who strongly agreed that they were confident on effective vaccines being provided. The converse is true as well for countries who were least receptive (e.g., Japan and France)
+
+**7.    Age is an important factor in receptivity towards vaccine**
+In the figure below, it is observed that in general and across all countries, the older population (aged 78-99 years) were much more receptive towards vaccination as compared to the younger respondents (aged 18-39 years).
+
+# Conclusion
+In conclusion, the side by side comparison of responses, as well as the breakdown by demographic factors, does reveal interesting patterns of receptivity towards COVID-19 vaccination. Public health authorities would gain much from the close analysis of these factors in the planning of programmes and strategies to increase COVID-19 vaccination.
