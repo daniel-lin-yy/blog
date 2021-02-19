@@ -22,3 +22,18 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
+# Background
+A research team has conducted a study to understand the receptivity of the public towards COVID-19 vaccination. As part of their study, data from the Imperial College London YouGov COVID-19 Behaviour Tracker Data Hub was utilised. From the data obtained, some visualizations were created. The aim of this post is to provide suggestions for improvement of the visualizations as well as to propose other visualizations for further analysis of the data to allow deeper insights to be gleaned.
+
+# A. Critique of Data Visualization Provided
+
+
+
+
+Based on the original data visualization provided, the following are some comments on the clarity and aesthetics aspects of the visualization.
+
+```{r pressure, echo=FALSE, fig.cap="Provided Data Visualization", out.width = '100%'}
+knitr::include_graphics("OriginalVisual.jpg")
+```
+
+
