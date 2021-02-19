@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/DataViz Makeover 2/",
+    "title": "DataViz Makeover 2",
+    "description": "Public receptivity and perceptions towards COVID-19 vaccinations, Jan 2021",
+    "author": [
+      {
+        "name": "Daniel Lin",
+        "url": "https://daniel-lin-yy-data-viz.netlify.app/"
+      }
+    ],
+    "date": "2021-02-19",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-02-19T13:30:54+08:00",
+    "input_file": "DatavizMakeover2.utf8.md"
+  },
+  {
     "path": "posts/DataViz Makeover 1/",
     "title": "DataViz Makeover 1",
     "description": "Visualization on Singapore's Resident Workforce, 2009 - 2019",
