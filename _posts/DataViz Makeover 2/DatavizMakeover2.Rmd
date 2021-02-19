@@ -79,15 +79,45 @@ Font type, size and colour selected in the chart is an appropriate choice as it 
 knitr::include_graphics("Sketch.jpg")
 ```
 
+## Description of and Rationale for Proposed Visualization
+
+**1.    Side by side comparison of responses to different questions**<br>
 The proposed visualization would include 2 graphs placed side by side with readers having an option to select the questions (variables) for which the charts are representing. This will allow users to compare responses to the different questions and derive deeper insights into the responses.
 
 For example, for a country with high proportion of public willing to take the vaccine, a comparison with their responses to other questions such as "I am worried about getting COVID19" or "I believe government authorities in my country will provide me with an effective COVID19 vaccine" could provide deeper understanding on the motivation of respondents' receptivity towards vaccination. Application wise, public health authorities would be able to determine if there were any public health messaging that would drive vaccination uptake more than others.
 
+**2.    Filters by demographical factors to allow deeper analysis**<br>
 There are also filters for the chart on the left, to allow users to refine the charts displayed by gender, age range, household size and number of children in households, which may provide interesting insights into possible factors linked to vaccination receptivity and perceptions.
 
-For the chart on the right, users have the option of selecting 90%, 95% and 99% confidence intervals to view the estimated proportions (and their confidence intervals) of respondents strongly agreeing with the respective statements.
+**3.    Option to select Confidence Intervals for error bars**<br>
+For the chart on the right, users have the option of selecting 90%, 95% and 99% confidence levels to view the estimated proportions (and their confidence intervals) of respondents strongly agreeing with the respective statements.
+
+**4.    Use of suitable Title and Write-up**
+<br>
+The title and write-up provides context to the visualization and helps the reader understand the utility of the charts.
+
+**5.    Inttuitive use of colours**<br>
+For the diverging stacked bar chart on the left, colours with same hues but differing tones are used to represent similar responses (i.e., Dark green for Strongly Agree, Green for Agree, Grey for Neutral, and Red and Dark Red for Disagree and Strongly Disagree). This allows for the reader to interpret the charts more easily and intuitively.
+
+**6.    Use of error bars to represent uncertainty**<br>
+To provide an indication of uncertainty of the sample proportion, error bars are used on the right, with varying levels of confidence. This allows the user to have a better understanding of the uncertainty in data shown as well as whether there were statistical diferences in the estimates for the various countries.
+
+**7.    Diverging stacked bar charts show skew and inclination intuitively**<br>
+Compared to the 100% stacked bar chart, the diverging bar chart shows skewness and inclination of the proportions more effectively and intuitively. At a glance, the user is able to tell which countries are more or less inclined towards COVID19 vaccination.
+
+**8.    Both charts sorted by countries' names in alphabetical order** <br>
+As the diverging stacked bar chart clearly displays the inclination of the countries, there is no need to sort the error bar chart on the right by decreasing level of willingness. Instead, both were sorted similarly to allow for easy comparison of country data between the 2 charts.
 
 
+# C. Proposed Data Visualization
+The proposed data visualization is found at the following URL:<br>
+*https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DatavizMakeover2_1316h/Dashboard1?publish=yes*
+<br><br>
+A **screenshot** of the visualization is as follow.
+
+```{r pressure2, echo=FALSE, fig.cap="Proposed Data Visualization", out.width = '100%'}
+knitr::include_graphics("ProposedDataViz.jpg")
+```
 
 
 

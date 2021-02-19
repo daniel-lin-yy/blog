@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["DatavizMakeover2_files/anchor-4.2.2/anchor.min.js","DatavizMakeover2_files/bowser-1.9.3/bowser.min.js","DatavizMakeover2_files/distill-2.2.21/template.v2.js","DatavizMakeover2_files/header-attrs-2.6/header-attrs.js","DatavizMakeover2_files/jquery-1.11.3/jquery.min.js","DatavizMakeover2_files/webcomponents-2.0.0/webcomponents.js","OriginalVisual.jpg","Sketch.jpg"]}
+  {"type":"character","attributes":{},"value":["DatavizMakeover2_files/anchor-4.2.2/anchor.min.js","DatavizMakeover2_files/bowser-1.9.3/bowser.min.js","DatavizMakeover2_files/distill-2.2.21/template.v2.js","DatavizMakeover2_files/header-attrs-2.6/header-attrs.js","DatavizMakeover2_files/jquery-1.11.3/jquery.min.js","DatavizMakeover2_files/webcomponents-2.0.0/webcomponents.js","OriginalVisual.jpg","ProposedDataViz.jpg","Sketch.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1473,10 +1473,26 @@ Figure 2: Sketch of Proposed Data Visualization
 </p>
 </div>
 </div>
-<p>The proposed visualization would include 2 graphs placed side by side with readers having an option to select the questions (variables) for which the charts are representing. This will allow users to compare responses to the different questions and derive deeper insights into the responses.</p>
+<h2 id="description-of-and-rationale-for-proposed-visualization">Description of and Rationale for Proposed Visualization</h2>
+<p><strong>1. Side by side comparison of responses to different questions</strong><br> The proposed visualization would include 2 graphs placed side by side with readers having an option to select the questions (variables) for which the charts are representing. This will allow users to compare responses to the different questions and derive deeper insights into the responses.</p>
 <p>For example, for a country with high proportion of public willing to take the vaccine, a comparison with their responses to other questions such as “I am worried about getting COVID19” or “I believe government authorities in my country will provide me with an effective COVID19 vaccine” could provide deeper understanding on the motivation of respondents’ receptivity towards vaccination. Application wise, public health authorities would be able to determine if there were any public health messaging that would drive vaccination uptake more than others.</p>
-<p>There are also filters for the chart on the left, to allow users to refine the charts displayed by gender, age range, household size and number of children in households, which may provide interesting insights into possible factors linked to vaccination receptivity and perceptions.</p>
-<p>For the chart on the right, users have the option of selecting 90%, 95% and 99% confidence intervals to view the estimated proportions (and their confidence intervals) of respondents strongly agreeing with the respective statements.</p>
+<p><strong>2. Filters by demographical factors to allow deeper analysis</strong><br> There are also filters for the chart on the left, to allow users to refine the charts displayed by gender, age range, household size and number of children in households, which may provide interesting insights into possible factors linked to vaccination receptivity and perceptions.</p>
+<p><strong>3. Option to select Confidence Intervals for error bars</strong><br> For the chart on the right, users have the option of selecting 90%, 95% and 99% confidence levels to view the estimated proportions (and their confidence intervals) of respondents strongly agreeing with the respective statements.</p>
+<p><strong>4. Use of suitable Title and Write-up</strong> <br> The title and write-up provides context to the visualization and helps the reader understand the utility of the charts.</p>
+<p><strong>5. Inttuitive use of colours</strong><br> For the diverging stacked bar chart on the left, colours with same hues but differing tones are used to represent similar responses (i.e., Dark green for Strongly Agree, Green for Agree, Grey for Neutral, and Red and Dark Red for Disagree and Strongly Disagree). This allows for the reader to interpret the charts more easily and intuitively.</p>
+<p><strong>6. Use of error bars to represent uncertainty</strong><br> To provide an indication of uncertainty of the sample proportion, error bars are used on the right, with varying levels of confidence. This allows the user to have a better understanding of the uncertainty in data shown as well as whether there were statistical diferences in the estimates for the various countries.</p>
+<p><strong>7. Diverging stacked bar charts show skew and inclination intuitively</strong><br> Compared to the 100% stacked bar chart, the diverging bar chart shows skewness and inclination of the proportions more effectively and intuitively. At a glance, the user is able to tell which countries are more or less inclined towards COVID19 vaccination.</p>
+<p><strong>8. Both charts sorted by countries’ names in alphabetical order</strong> <br> As the diverging stacked bar chart clearly displays the inclination of the countries, there is no need to sort the error bar chart on the right by decreasing level of willingness. Instead, both were sorted similarly to allow for easy comparison of country data between the 2 charts.</p>
+<h1 id="c.-proposed-data-visualization">C. Proposed Data Visualization</h1>
+<p>The proposed data visualization is found at the following URL:<br> <em><a href="https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DatavizMakeover2_1316h/Dashboard1?publish=yes" class="uri">https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DatavizMakeover2_1316h/Dashboard1?publish=yes</a></em> <br><br> A <strong>screenshot</strong> of the visualization is as follow.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure2"></span>
+<img src="ProposedDataViz.jpg" alt="Proposed Data Visualization" width="100%" />
+<p class="caption">
+Figure 3: Proposed Data Visualization
+</p>
+</div>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
