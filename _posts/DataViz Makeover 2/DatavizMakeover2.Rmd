@@ -213,6 +213,7 @@ All 14 country files were pulled into Tableau and a new column was created from 
 ```{r pressure14, echo=FALSE, fig.cap="Split function applied to Table Name field", out.width = '100%'}
 knitr::include_graphics("D2_1_b.jpg")
 ```
+
 ```{r pressure15, echo=FALSE, fig.cap="Creation of Country field", out.width = '100%'}
 knitr::include_graphics("D2_1a.jpg")
 ```
