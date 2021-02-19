@@ -194,7 +194,7 @@ For some of the country datasets, employment status is recorded in separate fiel
 ```{r pressure12, echo=FALSE, fig.cap="Employment status recorded over separate variables", out.width = '100%'}
 knitr::include_graphics("D1_5.jpg")
 ```
-As such, a new field “employment_status” needs to be created to be consistent with the datasets of the other countries.
+As such, a new field “employment_status” needs to be created to be consistent with the datasets of the other countries. The formula used to create the new field is as follows.
 
 *=IF(G2="Yes","Full time employment",IF(H2="Yes","Part time employment",IF(I2="Yes","Full time student",IF(J2="Yes","Retired",IF(K2="Yes","Unemployed",IF(L2="Yes","Not working",IF(M2="Yes","Other",0)))))))*
 
@@ -216,6 +216,37 @@ knitr::include_graphics("D2_1_b.jpg")
 
 ```{r pressure15, echo=FALSE, fig.cap="Creation of Country field", out.width = '100%'}
 knitr::include_graphics("D2_1a.jpg")
+```
+
+The responses to the various survey questions were then pivoted together into a single field as shown.
+
+```{r pressure21, echo=FALSE, fig.cap="Pivoting of survey responses", out.width = '100%'}
+knitr::include_graphics("D2_1c.jpg")
+```
+
+The pivot fields were then renamed to reflect the data they carry (i.e. Questions and Responses) as shown.
+
+```{r pressure22, echo=FALSE, fig.cap="Renaming of Pivoted Fields", out.width = '100%'}
+knitr::include_graphics("D2_1d.jpg")
+```
+
+### D2.2 Renaming of data values
+
+For Response, the data currently are continuous data types. They were converted to Dimensions as follows.
+
+```{r pressure23, echo=FALSE, fig.cap="Renaming of Pivoted Fields", out.width = '100%'}
+knitr::include_graphics("D2_1e.jpg")
+```
+The data values in Response was then re-labelled with their aliases as shown below.
+
+```{r pressure24, echo=FALSE, fig.cap="Editing aliases for Response field", out.width = '100%'}
+knitr::include_graphics("D2_2a.jpg")
+```
+
+The data in Question field was renamed also to reflect the respective survey questions, for easy reference.
+
+```{r pressure25, echo=FALSE, fig.cap="Editing aliases for Question field", out.width = '100%'}
+knitr::include_graphics("D2_2b.jpg")
 ```
 
 
@@ -254,14 +285,14 @@ knitr::include_graphics("D5_1c.jpg")
 **6.    Confidence in health authorities providing effective vaccines seemed to be linked to vaccine receptivity**
 In the chart below, with focus on the blue boxes, countries which had the highest receptivity towards vaccination (i.e., Denmark and UK) saw a higher proportion of respondents who strongly agreed that they were confident on effective vaccines being provided. The converse is true as well for countries who were least receptive (e.g., Japan and France)
 
-```{r pressure19, echo=FALSE, fig.cap="Vaccine receptivity and Confidence in vaccine efficacy", out.width = '100%'}
+```{r pressure20, echo=FALSE, fig.cap="Vaccine receptivity and Confidence in vaccine efficacy", out.width = '100%'}
 knitr::include_graphics("D5_1d.jpg")
 ```
 
 **7.    Age is an important factor in receptivity towards vaccine**
 In the figure below, it is observed that in general and across all countries, the older population (aged 78-99 years) were much more receptive towards vaccination as compared to the younger respondents (aged 18-39 years).
 
-```{r pressure20, echo=FALSE, fig.cap="Comparison of vaccine receptivity between age groups", out.width = '100%'}
+```{r pressure19, echo=FALSE, fig.cap="Comparison of vaccine receptivity between age groups", out.width = '100%'}
 knitr::include_graphics("D5_1e.jpg")
 ```
 
