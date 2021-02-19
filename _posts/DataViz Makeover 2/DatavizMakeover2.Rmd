@@ -27,13 +27,54 @@ A research team has conducted a study to understand the receptivity of the publi
 
 # A. Critique of Data Visualization Provided
 
+The original visualizations created by the team is shown below.
 
-
-
-Based on the original data visualization provided, the following are some comments on the clarity and aesthetics aspects of the visualization.
 
 ```{r pressure, echo=FALSE, fig.cap="Provided Data Visualization", out.width = '100%'}
 knitr::include_graphics("OriginalVisual.jpg")
 ```
+
+Based on the original data visualization provided, the following are some comments on the clarity and aesthetics aspects of the visualization.
+
+
+## Clarity
+**1.    Titles of the charts and legends are not well worded**<br>
+The title of the chart on the left could have been better phrased to reflect the content and key message of the chart. <br>
+The horizontal axes could have been better labelled to “Proportion of respondents”. <br>
+For the vertical axes, it is unnecessary to have the “Country” axis label as the country labels are self-explanatory. <br>
+For the legend, there is no need to label “Vac1” as it is not meaningful to the reader. <br><br>
+**2.    Colour chosen for categories not intuitive**<br>
+Colours selected to represent the categorical responses should reflect the nature of the responses. <br>
+For example, Strongly agree (1) and Agree (2) should be of the same colour hue but different in tones/shades to reflect intensity (i.e. (1) should be darker/more intense than (2)). Similarly, Strongly Disagree (5) and Disagree (4) should be of the same colour hue but of different tones/shades to reflect intensity (i.e. (5) should be more intense then (4)).<br>  
+<br>
+**3.    Uncertainty in the data was not represented**<br>
+For the chart on the right, since sample proportion was used, confidence intervals of the sample proportion should be included to allow readers to understand the margin of error in the sample estimates and to interpret if the proportions reflected are statistically different. <br><br>
+
+**4.    Inclination and skew of responses not easily observed with 100% stacked bar chart**<br>
+While the 100% stacked bar chart demonstrates the proportions of the responses for each country, it does not intuitively show the skew and inclination of the responses for each country at a glance. With a diverging stacked bar chart, the inclinations of the responses is more evident. <br><br>
+**5.    Insufficient data to draw meaningful observations**<br>
+Both charts essentially reflect countries' receptivity towards the COVID-19 vaccine. However, no further observations and analysis are available from the charts. In order to glean deeper insights, the data from the variable used (var_1) should be compared with data from other variables for analysis.     <br><br>
+
+**6.    Bar chart on the right sorted in descending order**<br>
+For the chart on the right, countries are sorted in descending order of the proportion of the public which had strongly agreed to the statement that they were willing to take the vaccine. By arranging in this manner,it allows easier identification of countries which had a higher receptivity towards the vaccine.
+
+## Aesthetics
+
+**1.    Horizontal arrangement of the bar chart**<br>
+As the bar charts are labelled according to country names, a horizontal mapping of the bar chart allows the countries’ names to be seem in full and in a less cluttered manner than if arranged in a vertical layout. <br><br>
+**2.    Country names should be in Title Case instead of lowercase**<br>
+Country names are proper nouns and should be in Title Case instead of the current lowercase used. <br><br>
+**3.    Consistent use of colours**<br>
+There was consistent use of colours in both graphs, where dark blue was used to represent the proportion of respondents who had strongly agreed.<br><br>
+**4.    Consistency in number of decimals on horizontal axes**<br>
+The chart on the left used whole number labels while the one on the right had labels with 1 decimal place. For consistency and for the charts to look less cluttered, whole number labels could be used.<br><br>
+**5.    Good choice of font type, size and colour**<br>
+Font type, size and colour selected in the chart is an appropriate choice as it is easily read by the reader. However, to emphasize key messages of the chart, annotations of different size and colour could be used.           
+
+
+
+
+
+
 
 
