@@ -182,3 +182,37 @@ Based on the codebook provided (see below), there should not be entries with 7 o
 ```{r pressure10, echo=FALSE, fig.cap="Error in values of household_children", out.width = '100%'}
 knitr::include_graphics("D1_4a.jpg")
 ```
+As such, values 7 and 8 will be recoded to “Don’t know” and “Prefer not to say” as aligned to the value labels in “household_size”. This is done through the use of the filter function as follow.
+
+```{r pressure11, echo=FALSE, fig.cap="Rectified values of household_children", out.width = '100%'}
+knitr::include_graphics("D1_4b.jpg")
+```
+### D1.5 Creation of employment_status field
+
+For some of the country datasets, employment status is recorded in separate fields as shown in the following figure. 
+
+```{r pressure12, echo=FALSE, fig.cap="Employment status recorded over separate variables", out.width = '100%'}
+knitr::include_graphics("D1_5.jpg")
+```
+As such, a new field “employment_status” needs to be created to be consistent with the datasets of the other countries.
+
+*=IF(G2="Yes","Full time employment",IF(H2="Yes","Part time employment",IF(I2="Yes","Full time student",IF(J2="Yes","Retired",IF(K2="Yes","Unemployed",IF(L2="Yes","Not working",IF(M2="Yes","Other",0)))))))*
+
+```{r pressure13, echo=FALSE, fig.cap="Creation of employment_status field", out.width = '100%'}
+knitr::include_graphics("D1_5.jpg")
+```
+The cleaned file is then saved with country name in Title case format.
+
+The above steps are then repeated for each of the country datasets.
+
+## D2. Creation of Diverging Stacked Bar Chart
+
+### D2.1 Importing of Datasets into Tableau
+All 14 country files were pulled into Tableau and a new column was created from Table Name via the split function to derive the Country variable.
+
+```{r pressure14, echo=FALSE, fig.cap="Split function applied to Table Name field", out.width = '100%'}
+knitr::include_graphics("D2_1_b.jpg")
+```
+```{r pressure15, echo=FALSE, fig.cap="Creation of Country field", out.width = '100%'}
+knitr::include_graphics("D2_1a.jpg")
+```

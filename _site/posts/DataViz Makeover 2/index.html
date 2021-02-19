@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["D1_1.jpg","D1_2a.jpg","D1_2b.jpg","D1_3a.jpg","D1_3b.jpg","D1_4a.jpg","DatavizMakeover2_files/anchor-4.2.2/anchor.min.js","DatavizMakeover2_files/bowser-1.9.3/bowser.min.js","DatavizMakeover2_files/distill-2.2.21/template.v2.js","DatavizMakeover2_files/header-attrs-2.6/header-attrs.js","DatavizMakeover2_files/jquery-1.11.3/jquery.min.js","DatavizMakeover2_files/webcomponents-2.0.0/webcomponents.js","OriginalVisual.jpg","ProposedDataViz.jpg","SelectedDemog.jpg","SelectedVariables.jpg","Sketch.jpg"]}
+  {"type":"character","attributes":{},"value":["D1_1.jpg","D1_2a.jpg","D1_2b.jpg","D1_3a.jpg","D1_3b.jpg","D1_4a.jpg","D1_4b.jpg","D1_5.jpg","D1_5a.jpg","D2_1_b.jpg","D2_1a.jpg","DatavizMakeover2_files/anchor-4.2.2/anchor.min.js","DatavizMakeover2_files/bowser-1.9.3/bowser.min.js","DatavizMakeover2_files/distill-2.2.21/template.v2.js","DatavizMakeover2_files/header-attrs-2.6/header-attrs.js","DatavizMakeover2_files/jquery-1.11.3/jquery.min.js","DatavizMakeover2_files/webcomponents-2.0.0/webcomponents.js","OriginalVisual.jpg","ProposedDataViz.jpg","SelectedDemog.jpg","SelectedVariables.jpg","Sketch.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2177,6 +2177,56 @@ Figure 10: Replacement of 5 - Strongly disagree using the Replace function
 <img src="D1_4a.jpg" alt="Error in values of household_children" width="100%" />
 <p class="caption">
 Figure 11: Error in values of household_children
+</p>
+</div>
+</div>
+<p>As such, values 7 and 8 will be recoded to “Don’t know” and “Prefer not to say” as aligned to the value labels in “household_size”. This is done through the use of the filter function as follow.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure11"></span>
+<img src="D1_4b.jpg" alt="Rectified values of household_children" width="100%" />
+<p class="caption">
+Figure 12: Rectified values of household_children
+</p>
+</div>
+</div>
+<h3 id="d1.5-creation-of-employment_status-field">D1.5 Creation of employment_status field</h3>
+<p>For some of the country datasets, employment status is recorded in separate fields as shown in the following figure.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure12"></span>
+<img src="D1_5.jpg" alt="Employment status recorded over separate variables" width="100%" />
+<p class="caption">
+Figure 13: Employment status recorded over separate variables
+</p>
+</div>
+</div>
+<p>As such, a new field “employment_status” needs to be created to be consistent with the datasets of the other countries.</p>
+<p><em>=IF(G2=“Yes”,“Full time employment”,IF(H2=“Yes”,“Part time employment”,IF(I2=“Yes”,“Full time student”,IF(J2=“Yes”,“Retired”,IF(K2=“Yes”,“Unemployed”,IF(L2=“Yes”,“Not working”,IF(M2=“Yes”,“Other”,0)))))))</em></p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure13"></span>
+<img src="D1_5.jpg" alt="Creation of employment_status field" width="100%" />
+<p class="caption">
+Figure 14: Creation of employment_status field
+</p>
+</div>
+</div>
+<p>The cleaned file is then saved with country name in Title case format.</p>
+<p>The above steps are then repeated for each of the country datasets.</p>
+<h2 id="d2.-creation-of-diverging-stacked-bar-chart">D2. Creation of Diverging Stacked Bar Chart</h2>
+<h3 id="d2.1-importing-of-datasets-into-tableau">D2.1 Importing of Datasets into Tableau</h3>
+<p>All 14 country files were pulled into Tableau and a new column was created from Table Name via the split function to derive the Country variable.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure14"></span>
+<img src="D2_1_b.jpg" alt="Split function applied to Table Name field" width="100%" />
+<p class="caption">
+Figure 15: Split function applied to Table Name field
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure15"></span>
+<img src="D2_1a.jpg" alt="Creation of Country field" width="100%" />
+<p class="caption">
+Figure 16: Creation of Country field
 </p>
 </div>
 </div>
