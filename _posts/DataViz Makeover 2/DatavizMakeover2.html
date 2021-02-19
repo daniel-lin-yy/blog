@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["DatavizMakeover2_files/anchor-4.2.2/anchor.min.js","DatavizMakeover2_files/bowser-1.9.3/bowser.min.js","DatavizMakeover2_files/distill-2.2.21/template.v2.js","DatavizMakeover2_files/header-attrs-2.6/header-attrs.js","DatavizMakeover2_files/jquery-1.11.3/jquery.min.js","DatavizMakeover2_files/webcomponents-2.0.0/webcomponents.js","OriginalVisual.jpg","ProposedDataViz.jpg","Sketch.jpg"]}
+  {"type":"character","attributes":{},"value":["DatavizMakeover2_files/anchor-4.2.2/anchor.min.js","DatavizMakeover2_files/bowser-1.9.3/bowser.min.js","DatavizMakeover2_files/distill-2.2.21/template.v2.js","DatavizMakeover2_files/header-attrs-2.6/header-attrs.js","DatavizMakeover2_files/jquery-1.11.3/jquery.min.js","DatavizMakeover2_files/webcomponents-2.0.0/webcomponents.js","OriginalVisual.jpg","ProposedDataViz.jpg","SelectedDemog.jpg","SelectedVariables.jpg","Sketch.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1476,7 +1476,7 @@ Figure 2: Sketch of Proposed Data Visualization
 <h2 id="description-of-and-rationale-for-proposed-visualization">Description of and Rationale for Proposed Visualization</h2>
 <p><strong>1. Side by side comparison of responses to different questions</strong><br> The proposed visualization would include 2 graphs placed side by side with readers having an option to select the questions (variables) for which the charts are representing. This will allow users to compare responses to the different questions and derive deeper insights into the responses.</p>
 <p>For example, for a country with high proportion of public willing to take the vaccine, a comparison with their responses to other questions such as “I am worried about getting COVID19” or “I believe government authorities in my country will provide me with an effective COVID19 vaccine” could provide deeper understanding on the motivation of respondents’ receptivity towards vaccination. Application wise, public health authorities would be able to determine if there were any public health messaging that would drive vaccination uptake more than others.</p>
-<p><strong>2. Filters by demographical factors to allow deeper analysis</strong><br> There are also filters for the chart on the left, to allow users to refine the charts displayed by gender, age range, household size and number of children in households, which may provide interesting insights into possible factors linked to vaccination receptivity and perceptions.</p>
+<p><strong>2. Filters by demographical factors to allow deeper analysis</strong><br> There are also filters for the chart on the left, to allow users to refine the charts displayed by gender, age range, employment status, household size and number of children in households, which may provide interesting insights into possible factors linked to vaccination receptivity and perceptions.</p>
 <p><strong>3. Option to select Confidence Intervals for error bars</strong><br> For the chart on the right, users have the option of selecting 90%, 95% and 99% confidence levels to view the estimated proportions (and their confidence intervals) of respondents strongly agreeing with the respective statements.</p>
 <p><strong>4. Use of suitable Title and Write-up</strong> <br> The title and write-up provides context to the visualization and helps the reader understand the utility of the charts.</p>
 <p><strong>5. Inttuitive use of colours</strong><br> For the diverging stacked bar chart on the left, colours with same hues but differing tones are used to represent similar responses (i.e., Dark green for Strongly Agree, Green for Agree, Grey for Neutral, and Red and Dark Red for Disagree and Strongly Disagree). This allows for the reader to interpret the charts more easily and intuitively.</p>
@@ -1490,6 +1490,27 @@ Figure 2: Sketch of Proposed Data Visualization
 <img src="ProposedDataViz.jpg" alt="Proposed Data Visualization" width="100%" />
 <p class="caption">
 Figure 3: Proposed Data Visualization
+</p>
+</div>
+</div>
+<h1 id="d.-preparation-of-data-visualization">D. Preparation of Data Visualization</h1>
+<h2 id="d1.-preparation-of-dataset">D1. Preparation of Dataset</h2>
+<h3 id="d1.1-extraction-of-targeted-variables-from-country-datasets-provided">D1.1 Extraction of targeted variables from country datasets provided</h3>
+<p>For the data visualization, the following variables have been selected for use from the datasets.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure3"></span>
+<img src="SelectedVariables.jpg" alt="Selected Variables" width="100%" />
+<p class="caption">
+Figure 4: Selected Variables
+</p>
+</div>
+</div>
+<p>Demographical data such as gender, age, household sizes, employment status, and endtime were extracted as well to provide deeper understanding to the profile of the respondents.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure4"></span>
+<img src="SelectedDemog.jpg" alt="Selected Demographic Variables" width="100%" />
+<p class="caption">
+Figure 5: Selected Demographic Variables
 </p>
 </div>
 </div>

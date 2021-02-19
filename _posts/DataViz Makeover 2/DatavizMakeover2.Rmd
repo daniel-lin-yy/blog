@@ -87,7 +87,7 @@ The proposed visualization would include 2 graphs placed side by side with reade
 For example, for a country with high proportion of public willing to take the vaccine, a comparison with their responses to other questions such as "I am worried about getting COVID19" or "I believe government authorities in my country will provide me with an effective COVID19 vaccine" could provide deeper understanding on the motivation of respondents' receptivity towards vaccination. Application wise, public health authorities would be able to determine if there were any public health messaging that would drive vaccination uptake more than others.
 
 **2.    Filters by demographical factors to allow deeper analysis**<br>
-There are also filters for the chart on the left, to allow users to refine the charts displayed by gender, age range, household size and number of children in households, which may provide interesting insights into possible factors linked to vaccination receptivity and perceptions.
+There are also filters for the chart on the left, to allow users to refine the charts displayed by gender, age range, employment status, household size and number of children in households, which may provide interesting insights into possible factors linked to vaccination receptivity and perceptions.
 
 **3.    Option to select Confidence Intervals for error bars**<br>
 For the chart on the right, users have the option of selecting 90%, 95% and 99% confidence levels to view the estimated proportions (and their confidence intervals) of respondents strongly agreeing with the respective statements.
@@ -117,6 +117,27 @@ A **screenshot** of the visualization is as follow.
 
 ```{r pressure2, echo=FALSE, fig.cap="Proposed Data Visualization", out.width = '100%'}
 knitr::include_graphics("ProposedDataViz.jpg")
+```
+
+# D. Preparation of Data Visualization
+
+## D1. Preparation of Dataset
+
+### D1.1 Extraction of targeted variables from country datasets provided
+
+For the data visualization, the following variables have been selected for use from the datasets.
+
+
+```{r pressure3, echo=FALSE, fig.cap="Selected Variables", out.width = '100%'}
+knitr::include_graphics("SelectedVariables.jpg")
+```
+
+
+Demographical data such as gender, age, household sizes, employment status, and endtime were extracted as well to provide deeper understanding to the profile of the respondents.
+
+
+```{r pressure4, echo=FALSE, fig.cap="Selected Demographic Variables", out.width = '100%'}
+knitr::include_graphics("SelectedDemog.jpg")
 ```
 
 
