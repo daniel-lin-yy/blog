@@ -249,6 +249,57 @@ The data in Question field was renamed also to reflect the respective survey que
 knitr::include_graphics("D2_2b.jpg")
 ```
 
+### D2.3 Creation of Calculated Fields
+
+Calculated fields needed to be created via the Analysis tab as shown below.
+
+```{r pressure26, echo=FALSE, fig.cap="Creation of Calculated Field", out.width = '100%'}
+knitr::include_graphics("D2_2c.jpg")
+```
+
+Formulae for the respective calculated fields were input as shown below.
+
+```{r pressure27, echo=FALSE, fig.cap="Creation of Number of Records field", out.width = '100%'}
+knitr::include_graphics("D2_2d.jpg")
+```
+
+```{r pressure28, echo=FALSE, fig.cap="Creation of Total Count field", out.width = '100%'}
+knitr::include_graphics("D2_3a.jpg")
+```
+
+```{r pressure29, echo=FALSE, fig.cap="Creation of Count Negative field", out.width = '100%'}
+knitr::include_graphics("D2_3b.jpg")
+```
+
+```{r pressure30, echo=FALSE, fig.cap="Creation of Total Count Negative field", out.width = '100%'}
+knitr::include_graphics("D2_3c.jpg")
+```
+
+```{r pressure31, echo=FALSE, fig.cap="Creation of Percentage field", out.width = '100%'}
+knitr::include_graphics("D2_3d.jpg")
+```
+
+The Diverging Stacked Bar Chart is actually created using a Gantt chart concept. As such the start point of the Gantt chart is defined as follow.
+
+```{r pressure32, echo=FALSE, fig.cap="Creation of Gantt start", out.width = '100%'}
+knitr::include_graphics("D2_3e.jpg")
+```
+
+```{r pressure33, echo=FALSE, fig.cap="Creation of Gantt Percent", out.width = '100%'}
+knitr::include_graphics("D2_3f.jpg")
+```
+
+```{r pressure34, echo=FALSE, fig.cap="Creation of Gantt Percent", out.width = '100%'}
+knitr::include_graphics("D2_3f.jpg")
+```
+
+Bring Gantt Percent into columns, Country into Rows, Response to the Colour button and Detail button, and Percentage to Size button as shown. Ensure Gantt Percent and Percentage are computed using Response (refer to below).
+
+```{r pressure35, echo=FALSE, fig.cap="Creation of Gantt Percent", out.width = '100%'}
+knitr::include_graphics("D2_3g.jpg")
+```
+
+
 
 
 # E. Observations from the Proposed Data Visualization
