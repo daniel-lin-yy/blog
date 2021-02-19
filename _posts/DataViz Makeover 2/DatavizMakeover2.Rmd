@@ -293,12 +293,37 @@ knitr::include_graphics("D2_3f.jpg")
 knitr::include_graphics("D2_3f.jpg")
 ```
 
-Bring Gantt Percent into columns, Country into Rows, Response to the Colour button and Detail button, and Percentage to Size button as shown. Ensure Gantt Percent and Percentage are computed using Response (refer to below).
+### D2.4 Creation of Chart (using Gantt chart)
+
+Bring Gantt Percent into Columns, Country into Rows, Response to the Colour button and Detail button, and Percentage to Size button as shown. Ensure Gantt Percent and Percentage are computed using Response (refer to below).
 
 ```{r pressure35, echo=FALSE, fig.cap="Creation of Gantt Percent", out.width = '100%'}
 knitr::include_graphics("D2_3g.jpg")
 ```
 
+Change Marks to Gantt Bar as shown.
+
+```{r pressure38, echo=FALSE, fig.cap="Create Gantt Chart", out.width = '100%'}
+knitr::include_graphics("D2_4a.jpg")
+```
+
+Next, bring in the following fields into the Filters panel. For the Response filter, select all except Null to exclude Null responses. For each of the filters, select Show Filter as shown below to get the Filters appearing on the right of the chart.
+
+```{r pressure36, echo=FALSE, fig.cap="Creation of Filters (left), select Show Filter (centre), filters appear on the right of chart (right)", out.width = '100%'}
+knitr::include_graphics("D2_3h.jpg")
+```
+
+Select appropriate colours for the corresponding Response values as shown.
+
+```{r pressure37, echo=FALSE, fig.cap="Selection of colours for Response values", out.width = '100%'}
+knitr::include_graphics("D2_3i.jpg")
+```
+
+Right click on the horizontal axis and select Edit Axis. Select Reversed so that the Strongly Agree appears on the right. Right click on the axis again and select Format. Input the Custom format as shown (0%;#%) to ensure the percentage labels are in positive values for both sides.
+
+```{r pressure39, echo=FALSE, fig.cap="Formatting of horizontal axis", out.width = '100%'}
+knitr::include_graphics("D2_4b.jpg")
+```
 
 
 
