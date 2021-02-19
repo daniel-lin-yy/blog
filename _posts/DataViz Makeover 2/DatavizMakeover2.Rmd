@@ -78,9 +78,14 @@ Font type, size and colour selected in the chart is an appropriate choice as it 
 ```{r pressure1, echo=FALSE, fig.cap="Sketch of Proposed Data Visualization", out.width = '100%'}
 knitr::include_graphics("Sketch.jpg")
 ```
+
 The proposed visualization would include 2 graphs placed side by side with readers having an option to select the questions (variables) for which the charts are representing. This will allow users to compare responses to the different questions and derive deeper insights into the responses.
 
 For example, for a country with high proportion of public willing to take the vaccine, a comparison with their responses to other questions such as "I am worried about getting COVID19" or "I believe government authorities in my country will provide me with an effective COVID19 vaccine" could provide deeper understanding on the motivation of respondents' receptivity towards vaccination. Application wise, public health authorities would be able to determine if there were any public health messaging that would drive vaccination uptake more than others.
+
+There are also filters for the chart on the left, to allow users to refine the charts displayed by gender, age range, household size and number of children in households, which may provide interesting insights into possible factors linked to vaccination receptivity and perceptions.
+
+For the chart on the right, users have the option of selecting 90%, 95% and 99% confidence intervals to view the estimated proportions (and their confidence intervals) of respondents strongly agreeing with the respective statements.
 
 
 
