@@ -72,7 +72,15 @@ The chart on the left used whole number labels while the one on the right had la
 Font type, size and colour selected in the chart is an appropriate choice as it is easily read by the reader. However, to emphasize key messages of the chart, annotations of different size and colour could be used.           
 
 
+# B. Proposed Alternative Data Visualization
 
+## Sketch of Proposed Visualization
+```{r pressure1, echo=FALSE, fig.cap="Sketch of Proposed Data Visualization", out.width = '100%'}
+knitr::include_graphics("Sketch.jpg")
+```
+The proposed visualization would include 2 graphs placed side by side with readers having an option to select the questions (variables) for which the charts are representing. This will allow users to compare responses to the different questions and derive deeper insights into the responses.
+
+For example, for a country with high proportion of public willing to take the vaccine, a comparison with their responses to other questions such as "I am worried about getting COVID19" or "I believe government authorities in my country will provide me with an effective COVID19 vaccine" could provide deeper understanding on the motivation of respondents' receptivity towards vaccination. Application wise, public health authorities would be able to determine if there were any public health messaging that would drive vaccination uptake more than others.
 
 
 
