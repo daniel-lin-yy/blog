@@ -140,5 +140,45 @@ Demographical data such as gender, age, household sizes, employment status, and 
 knitr::include_graphics("SelectedDemog.jpg")
 ```
 
+For each of the country datasets, only the above selected fields were extracted from the original datasets. The below is a screenshot of the selected fields retained from the original country dataset.
 
+```{r pressure5, echo=FALSE, fig.cap="Extracted variables from original dataset", out.width = '100%'}
+knitr::include_graphics("D1_1.jpg")
+```
 
+### D1.2 Selection of relevant records
+
+For the research, only data from January 2021 was used for analysis and visualization. As such, records of responses that were done in January 2021 were extracted from the dataset. This was done by first applying a date filter in the “endtime” column and selecting the relevant records as follow.
+
+```{r pressure6, echo=FALSE, fig.cap="Date filter applied to extract Jan 2021 records", out.width = '100%'}
+knitr::include_graphics("D1_2a.jpg")
+```
+
+The following is a screenshot of the resulting dataset.
+
+```{r pressure7, echo=FALSE, fig.cap="Remaining dataset after extracting Jan 2021 data", out.width = '100%'}
+knitr::include_graphics("D1_2b.jpg")
+```
+
+### D1.3 Recoding of “1 – Strongly agree” and “5 – Strongly disagree”
+
+For selected fields vac_1, vac2_1, vac2_2, vac2_3, vac2_6 and vac_3, 2 of the data values “1 – Strongly agree” and “5 – Strongly disagree” need to be recoded to numerical values 1 and 5 respectively.
+
+This is done by using the Replace function as shown below
+
+```{r pressure8, echo=FALSE, fig.cap="Replacement of 1 - Strongly agree using the Replace function", out.width = '100%'}
+knitr::include_graphics("D1_3a.jpg")
+```
+and
+
+```{r pressure9, echo=FALSE, fig.cap="Replacement of 5 - Strongly disagree using the Replace function", out.width = '100%'}
+knitr::include_graphics("D1_3b.jpg")
+```
+
+### D1.4 Recoding of values in household_children field
+
+Based on the codebook provided (see below), there should not be entries with 7 or 8 in the “household_children” field as these would have been captured under “5 or more”. Rather 8 is supposed to be mapped to “Prefer not to say” and 7 is actually an invalid input value. In some of the countries’ datasets, this has not been properly coded (refer to diagram below).
+
+```{r pressure10, echo=FALSE, fig.cap="Error in values of household_children", out.width = '100%'}
+knitr::include_graphics("D1_4a.jpg")
+```

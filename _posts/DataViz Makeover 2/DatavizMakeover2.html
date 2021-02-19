@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["DatavizMakeover2_files/anchor-4.2.2/anchor.min.js","DatavizMakeover2_files/bowser-1.9.3/bowser.min.js","DatavizMakeover2_files/distill-2.2.21/template.v2.js","DatavizMakeover2_files/header-attrs-2.6/header-attrs.js","DatavizMakeover2_files/jquery-1.11.3/jquery.min.js","DatavizMakeover2_files/webcomponents-2.0.0/webcomponents.js","OriginalVisual.jpg","ProposedDataViz.jpg","SelectedDemog.jpg","SelectedVariables.jpg","Sketch.jpg"]}
+  {"type":"character","attributes":{},"value":["D1_1.jpg","D1_2a.jpg","D1_2b.jpg","D1_3a.jpg","D1_3b.jpg","D1_4a.jpg","DatavizMakeover2_files/anchor-4.2.2/anchor.min.js","DatavizMakeover2_files/bowser-1.9.3/bowser.min.js","DatavizMakeover2_files/distill-2.2.21/template.v2.js","DatavizMakeover2_files/header-attrs-2.6/header-attrs.js","DatavizMakeover2_files/jquery-1.11.3/jquery.min.js","DatavizMakeover2_files/webcomponents-2.0.0/webcomponents.js","OriginalVisual.jpg","ProposedDataViz.jpg","SelectedDemog.jpg","SelectedVariables.jpg","Sketch.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1511,6 +1511,64 @@ Figure 4: Selected Variables
 <img src="SelectedDemog.jpg" alt="Selected Demographic Variables" width="100%" />
 <p class="caption">
 Figure 5: Selected Demographic Variables
+</p>
+</div>
+</div>
+<p>For each of the country datasets, only the above selected fields were extracted from the original datasets. The below is a screenshot of the selected fields retained from the original country dataset.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure5"></span>
+<img src="D1_1.jpg" alt="Extracted variables from original dataset" width="100%" />
+<p class="caption">
+Figure 6: Extracted variables from original dataset
+</p>
+</div>
+</div>
+<h3 id="d1.2-selection-of-relevant-records">D1.2 Selection of relevant records</h3>
+<p>For the research, only data from January 2021 was used for analysis and visualization. As such, records of responses that were done in January 2021 were extracted from the dataset. This was done by first applying a date filter in the “endtime” column and selecting the relevant records as follow.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure6"></span>
+<img src="D1_2a.jpg" alt="Date filter applied to extract Jan 2021 records" width="100%" />
+<p class="caption">
+Figure 7: Date filter applied to extract Jan 2021 records
+</p>
+</div>
+</div>
+<p>The following is a screenshot of the resulting dataset.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure7"></span>
+<img src="D1_2b.jpg" alt="Remaining dataset after extracting Jan 2021 data" width="100%" />
+<p class="caption">
+Figure 8: Remaining dataset after extracting Jan 2021 data
+</p>
+</div>
+</div>
+<h3 id="d1.3-recoding-of-1-strongly-agree-and-5-strongly-disagree">D1.3 Recoding of “1 – Strongly agree” and “5 – Strongly disagree”</h3>
+<p>For selected fields vac_1, vac2_1, vac2_2, vac2_3, vac2_6 and vac_3, 2 of the data values “1 – Strongly agree” and “5 – Strongly disagree” need to be recoded to numerical values 1 and 5 respectively.</p>
+<p>This is done by using the Replace function as shown below</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure8"></span>
+<img src="D1_3a.jpg" alt="Replacement of 1 - Strongly agree using the Replace function" width="100%" />
+<p class="caption">
+Figure 9: Replacement of 1 - Strongly agree using the Replace function
+</p>
+</div>
+</div>
+<p>and</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure9"></span>
+<img src="D1_3b.jpg" alt="Replacement of 5 - Strongly disagree using the Replace function" width="100%" />
+<p class="caption">
+Figure 10: Replacement of 5 - Strongly disagree using the Replace function
+</p>
+</div>
+</div>
+<h3 id="d1.4-recoding-of-values-in-household_children-field">D1.4 Recoding of values in household_children field</h3>
+<p>Based on the codebook provided (see below), there should not be entries with 7 or 8 in the “household_children” field as these would have been captured under “5 or more”. Rather 8 is supposed to be mapped to “Prefer not to say” and 7 is actually an invalid input value. In some of the countries’ datasets, this has not been properly coded (refer to diagram below).</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure10"></span>
+<img src="D1_4a.jpg" alt="Error in values of household_children" width="100%" />
+<p class="caption">
+Figure 11: Error in values of household_children
 </p>
 </div>
 </div>
