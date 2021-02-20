@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["D1_1.jpg","D1_2a.jpg","D1_2b.jpg","D1_3a.jpg","D1_3b.jpg","D1_4a.jpg","D1_4b.jpg","D1_5.jpg","D1_5a.jpg","D2_1_b.jpg","D2_1a.jpg","D2_1c.jpg","D2_1d.jpg","D2_1e.jpg","D2_2a.jpg","D2_2b.jpg","D2_2c.jpg","D2_2d.jpg","D2_3a.jpg","D2_3b.jpg","D2_3c.jpg","D2_3d.jpg","D2_3e.jpg","D2_3f.jpg","D2_3g.jpg","D2_3h.jpg","D2_3i.jpg","D2_4a.jpg","D2_4b.jpg","D5_1a.jpg","D5_1b.jpg","D5_1c.jpg","D5_1d.jpg","D5_1e.jpg","DatavizMakeover2_files/anchor-4.2.2/anchor.min.js","DatavizMakeover2_files/bowser-1.9.3/bowser.min.js","DatavizMakeover2_files/distill-2.2.21/template.v2.js","DatavizMakeover2_files/header-attrs-2.6/header-attrs.js","DatavizMakeover2_files/jquery-1.11.3/jquery.min.js","DatavizMakeover2_files/webcomponents-2.0.0/webcomponents.js","OriginalVisual.jpg","ProposedDataViz.jpg","SelectedDemog.jpg","SelectedVariables.jpg","Sketch.jpg"]}
+  {"type":"character","attributes":{},"value":["D1_1.jpg","D1_2a.jpg","D1_2b.jpg","D1_3a.jpg","D1_3b.jpg","D1_4a.jpg","D1_4b.jpg","D1_5.jpg","D1_5a.jpg","D2_1_b.jpg","D2_1a.jpg","D2_1c.jpg","D2_1d.jpg","D2_1e.jpg","D2_2a.jpg","D2_2b.jpg","D2_2c.jpg","D2_2d.jpg","D2_3a.jpg","D2_3b.jpg","D2_3c.jpg","D2_3d.jpg","D2_3e.jpg","D2_3f.jpg","D2_3g.jpg","D2_3h.jpg","D2_3i.jpg","D2_4a.jpg","D2_4b.jpg","D2_4c.jpg","D3_!j.jpg","D3_1a.jpg","D3_1b.jpg","D3_1c.jpg","D3_1d.jpg","D3_1e.jpg","D3_1f.jpg","D3_1g.jpg","D3_1h.jpg","D3_1i.jpg","D3_2a.jpg","D3_2b.jpg","D3_2c.jpg","D3_2d.jpg","D3_2e.jpg","D3_2f.jpg","D3_2g.jpg","D3_2h.jpg","D3_2i.jpg","D3_2j.jpg","D3_2k.jpg","D3_2l.jpg","D4_1a.jpg","D4_1b.jpg","D4_1c.jpg","D4_1d.jpg","D4_1e.jpg","D4_1f.jpg","D5_1a.jpg","D5_1b.jpg","D5_1c.jpg","D5_1d.jpg","D5_1e.jpg","DatavizMakeover2_files/anchor-4.2.2/anchor.min.js","DatavizMakeover2_files/bowser-1.9.3/bowser.min.js","DatavizMakeover2_files/distill-2.2.21/template.v2.js","DatavizMakeover2_files/header-attrs-2.6/header-attrs.js","DatavizMakeover2_files/jquery-1.11.3/jquery.min.js","DatavizMakeover2_files/webcomponents-2.0.0/webcomponents.js","OriginalVisual.jpg","ProposedDataViz.jpg","SelectedDemog.jpg","SelectedVariables.jpg","Sketch.jpg"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2398,13 +2398,271 @@ Figure 35: Formatting of horizontal axis
 </p>
 </div>
 </div>
+<p>Rename the chart by double clicking the title of the chart and editing the title as shown.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure62"></span>
+<img src="D2_4c.jpg" alt="Rename title of the chart" width="100%" />
+<p class="caption">
+Figure 36: Rename title of the chart
+</p>
+</div>
+</div>
+<h2 id="d3.-creation-of-error-bars">D3. Creation of Error Bars</h2>
+<h3 id="d3.1-creation-of-calculated-fields">D3.1 Creation of Calculated Fields</h3>
+<p>First create a parameter called “Select Question” with the following list of values.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure40"></span>
+<img src="D3_1b.jpg" alt="Creation of Select Question paremeter" width="100%" />
+<p class="caption">
+Figure 37: Creation of Select Question paremeter
+</p>
+</div>
+</div>
+<p>Then create No of Records as shown.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure41"></span>
+<img src="D3_1a.jpg" alt="Creation of No of Records" width="100%" />
+<p class="caption">
+Figure 38: Creation of No of Records
+</p>
+</div>
+</div>
+<p>Create a calculated field Strongly Agreed to count the number of respondents who had Strongly Agreed to the question selected (i.e. Question)</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure42"></span>
+<img src="D3_1c.jpg" alt="Creation of Strongly Agreed field" width="100%" />
+<p class="caption">
+Figure 39: Creation of Strongly Agreed field
+</p>
+</div>
+</div>
+<p>Now create Prop to compute the proportion who Strongly Agreed.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure43"></span>
+<img src="D3_1d.jpg" alt="Creation of Prop field" width="100%" />
+<p class="caption">
+Figure 40: Creation of Prop field
+</p>
+</div>
+</div>
+<p>Next, create Select CI parameter, Prop_SE, Z_value, Prop_Margin of Error, Prop_Lower Limit, Prop_Upper Limit</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure44"></span>
+<img src="D3_1f.jpg" alt="Creation of Select CI parameter" width="100%" />
+<p class="caption">
+Figure 41: Creation of Select CI parameter
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure45"></span>
+<img src="D3_1e.jpg" alt="Creation of Prop_SE" width="100%" />
+<p class="caption">
+Figure 42: Creation of Prop_SE
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure46"></span>
+<img src="D3_1g.jpg" alt="Creation of Z_value" width="100%" />
+<p class="caption">
+Figure 43: Creation of Z_value
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure47"></span>
+<img src="D3_1h.jpg" alt="Creation of Prop_Margin of Error" width="100%" />
+<p class="caption">
+Figure 44: Creation of Prop_Margin of Error
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure48"></span>
+<img src="D3_1i.jpg" alt="Creation of Prop_Lower Limit" width="100%" />
+<p class="caption">
+Figure 45: Creation of Prop_Lower Limit
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure49"></span>
+<img src="D3_!j.jpg" alt="Creation of Prop_Upper Limit" width="100%" />
+<p class="caption">
+Figure 46: Creation of Prop_Upper Limit
+</p>
+</div>
+</div>
+<h3 id="d3.2-creation-of-dot-plot-with-error-bars">D3.2 Creation of Dot Plot with Error Bars</h3>
+<p>Bring Prop and Country in to Columns and Rows fields respectively.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure50"></span>
+<img src="D3_2a.jpg" alt="Bring Prop and Country onto canvas" width="100%" />
+<p class="caption">
+Figure 47: Bring Prop and Country onto canvas
+</p>
+</div>
+</div>
+<p>Pull Measure Values from the Tables Pane to the top of the chart created as shown below.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure51"></span>
+<img src="D3_2b.jpg" alt="Bring Measure Values into chart" width="100%" />
+<p class="caption">
+Figure 48: Bring Measure Values into chart
+</p>
+</div>
+</div>
+<p>THe resulting chart is as shown. Remove the fields in the Measure Values pane, leaving behind Prop_Lower Limit and Prop_Upper Limit.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure52"></span>
+<img src="D3_2c.jpg" alt="Resulting chart" width="100%" />
+<p class="caption">
+Figure 49: Resulting chart
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure53"></span>
+<img src="D3_2d.jpg" alt="Chart with only Prop_Upper Limit and Prop_Lower Limit remaining in Measure Values pane" width="100%" />
+<p class="caption">
+Figure 50: Chart with only Prop_Upper Limit and Prop_Lower Limit remaining in Measure Values pane
+</p>
+</div>
+</div>
+<p>Next, synchornise the horizontal axes as shown.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure54"></span>
+<img src="D3_2e.jpg" alt="Synchronize horizontal axes" width="100%" />
+<p class="caption">
+Figure 51: Synchronize horizontal axes
+</p>
+</div>
+</div>
+<p>Change Measure Values to Line as shown.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure55"></span>
+<img src="D3_2f.jpg" alt="Change Measure Values to Line" width="100%" />
+<p class="caption">
+Figure 52: Change Measure Values to Line
+</p>
+</div>
+</div>
+<p>Bring Measure Names to the Path icon to arrive at the following chart.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure56"></span>
+<img src="D3_2g.jpg" alt="Bring Measure Names to Path Icon" width="100%" />
+<p class="caption">
+Figure 53: Bring Measure Names to Path Icon
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure57"></span>
+<img src="D3_2h.jpg" alt="Resulting Dot Plot with Error Bars" width="100%" />
+<p class="caption">
+Figure 54: Resulting Dot Plot with Error Bars
+</p>
+</div>
+</div>
+<p>Modify the colour and width of the error bars and the dot plots using the Measure Values and AGG(Prop) panes as shown.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure58"></span>
+<img src="D3_2i.jpg" alt="Modification of colour and size of error bars and dot plots" width="100%" />
+<p class="caption">
+Figure 55: Modification of colour and size of error bars and dot plots
+</p>
+</div>
+</div>
+<p>Swap Measure Values and AGG(Prop) in the Columns field for the dot plots to appear above the error bars as shown.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure59"></span>
+<img src="D3_2j.jpg" alt="Swap Measure Values and AGG(Prop)" width="100%" />
+<p class="caption">
+Figure 56: Swap Measure Values and AGG(Prop)
+</p>
+</div>
+</div>
+<p>For the 2 parameters created, right click and select “Show Parameter” to display them on the right panel. This will allow users to select the different confidence levels and questions to be displayed on the chart.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure60"></span>
+<img src="D3_2k.jpg" alt="Display parameters on the right" width="100%" />
+<p class="caption">
+Figure 57: Display parameters on the right
+</p>
+</div>
+</div>
+<p>Rename the chart by double clicking on the title and editing the title in the window that appears as shown.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure61"></span>
+<img src="D3_2l.jpg" alt="Rename title of the chart" width="100%" />
+<p class="caption">
+Figure 58: Rename title of the chart
+</p>
+</div>
+</div>
+<h2 id="d4.-creation-of-dashboard">D4. Creation of Dashboard</h2>
+<p>Bring the 2 charts from the Sheets panel into the dashboard and place them side by side as shown.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure63"></span>
+<img src="D4_1a.jpg" alt="Bring created charts onto the dashboard" width="100%" />
+<p class="caption">
+Figure 59: Bring created charts onto the dashboard
+</p>
+</div>
+</div>
+<p>Edit the size of the dashboard on the left as shown.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure64"></span>
+<img src="D4_1b.jpg" alt="Re-size dashboard" width="100%" />
+<p class="caption">
+Figure 60: Re-size dashboard
+</p>
+</div>
+</div>
+<p>Shift the elements of the dashboard around to arrived at desired layout.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure65"></span>
+<img src="D4_1c.jpg" alt="Drag and move elements in dashboard" width="100%" />
+<p class="caption">
+Figure 61: Drag and move elements in dashboard
+</p>
+</div>
+</div>
+<p>Right click on the Select CI parameter and select Floating to position the dropdown list at the desired place.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure67"></span>
+<img src="D4_1d.jpg" alt="Make Select CI parameter floating" width="100%" />
+<p class="caption">
+Figure 62: Make Select CI parameter floating
+</p>
+</div>
+</div>
+<p>Drag the Text icon to the top of the dashboard to create a title. Key in the title in the dialogue box that follows.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure68"></span>
+<img src="D4_1e.jpg" alt="Create title and sub-title for dashboard" width="100%" />
+<p class="caption">
+Figure 63: Create title and sub-title for dashboard
+</p>
+</div>
+</div>
+<p>Finally add another text box to the bottom to acknowledge the source of the data. The final layout of the dashboard is as shown.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure69"></span>
+<img src="D4_1f.jpg" alt="Completed dashboard" width="100%" />
+<p class="caption">
+Figure 64: Completed dashboard
+</p>
+</div>
+</div>
 <h1 id="e.-observations-from-the-proposed-data-visualization">E. Observations from the Proposed Data Visualization</h1>
 <p><strong>1. United Kingdom (UK) had the greatest receptivity towards COVID-19 vaccination</strong><br> From the figure below, it is observed that respondents from the UK were most inclined and receptive towards COVID-19 vaccination. France on the other hand, seemed to be the least receptive towards vaccination.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:pressure16"></span>
 <img src="D5_1a.jpg" alt="Inclination of countries towards vaccination" width="100%" />
 <p class="caption">
-Figure 36: Inclination of countries towards vaccination
+Figure 65: Inclination of countries towards vaccination
 </p>
 </div>
 </div>
@@ -2415,7 +2673,7 @@ Figure 36: Inclination of countries towards vaccination
 <div class="figure"><span id="fig:pressure17"></span>
 <img src="D5_1b.jpg" alt="Vaccine receptivity and Worry of getting COVID-19" width="100%" />
 <p class="caption">
-Figure 37: Vaccine receptivity and Worry of getting COVID-19
+Figure 66: Vaccine receptivity and Worry of getting COVID-19
 </p>
 </div>
 </div>
@@ -2425,7 +2683,7 @@ Figure 37: Vaccine receptivity and Worry of getting COVID-19
 <div class="figure"><span id="fig:pressure18"></span>
 <img src="D5_1c.jpg" alt="Vaccine receptivity and Worry of vaccine side effects" width="100%" />
 <p class="caption">
-Figure 38: Vaccine receptivity and Worry of vaccine side effects
+Figure 67: Vaccine receptivity and Worry of vaccine side effects
 </p>
 </div>
 </div>
@@ -2434,7 +2692,7 @@ Figure 38: Vaccine receptivity and Worry of vaccine side effects
 <div class="figure"><span id="fig:pressure20"></span>
 <img src="D5_1d.jpg" alt="Vaccine receptivity and Confidence in vaccine efficacy" width="100%" />
 <p class="caption">
-Figure 39: Vaccine receptivity and Confidence in vaccine efficacy
+Figure 68: Vaccine receptivity and Confidence in vaccine efficacy
 </p>
 </div>
 </div>
@@ -2443,7 +2701,7 @@ Figure 39: Vaccine receptivity and Confidence in vaccine efficacy
 <div class="figure"><span id="fig:pressure19"></span>
 <img src="D5_1e.jpg" alt="Comparison of vaccine receptivity between age groups" width="100%" />
 <p class="caption">
-Figure 40: Comparison of vaccine receptivity between age groups
+Figure 69: Comparison of vaccine receptivity between age groups
 </p>
 </div>
 </div>

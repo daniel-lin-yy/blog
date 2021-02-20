@@ -325,7 +325,172 @@ Right click on the horizontal axis and select Edit Axis. Select Reversed so that
 knitr::include_graphics("D2_4b.jpg")
 ```
 
+Rename the chart by double clicking the title of the chart and editing the title as shown.
 
+```{r pressure62, echo=FALSE, fig.cap="Rename title of the chart", out.width = '100%'}
+knitr::include_graphics("D2_4c.jpg")
+```
+
+
+## D3. Creation of Error Bars
+
+### D3.1 Creation of Calculated Fields
+
+First create a parameter called "Select Question" with the following list of values.
+
+```{r pressure40, echo=FALSE, fig.cap="Creation of Select Question paremeter", out.width = '100%'}
+knitr::include_graphics("D3_1b.jpg")
+```
+
+Then create No of Records as shown.
+
+```{r pressure41, echo=FALSE, fig.cap="Creation of No of Records", out.width = '100%'}
+knitr::include_graphics("D3_1a.jpg")
+```
+
+Create a calculated field Strongly Agreed to count the number of respondents who had Strongly Agreed to the question selected (i.e. Question)
+
+```{r pressure42, echo=FALSE, fig.cap="Creation of Strongly Agreed field", out.width = '100%'}
+knitr::include_graphics("D3_1c.jpg")
+```
+
+Now create Prop to compute the proportion who Strongly Agreed.
+
+```{r pressure43, echo=FALSE, fig.cap="Creation of Prop field", out.width = '100%'}
+knitr::include_graphics("D3_1d.jpg")
+```
+
+Next, create Select CI parameter, Prop_SE, Z_value, Prop_Margin of Error, Prop_Lower Limit, Prop_Upper Limit
+
+```{r pressure44, echo=FALSE, fig.cap="Creation of Select CI parameter", out.width = '100%'}
+knitr::include_graphics("D3_1f.jpg")
+```
+
+```{r pressure45, echo=FALSE, fig.cap="Creation of Prop_SE", out.width = '100%'}
+knitr::include_graphics("D3_1e.jpg")
+```
+
+```{r pressure46, echo=FALSE, fig.cap="Creation of Z_value", out.width = '100%'}
+knitr::include_graphics("D3_1g.jpg")
+```
+
+```{r pressure47, echo=FALSE, fig.cap="Creation of Prop_Margin of Error", out.width = '100%'}
+knitr::include_graphics("D3_1h.jpg")
+```
+
+```{r pressure48, echo=FALSE, fig.cap="Creation of Prop_Lower Limit", out.width = '100%'}
+knitr::include_graphics("D3_1i.jpg")
+```
+
+```{r pressure49, echo=FALSE, fig.cap="Creation of Prop_Upper Limit", out.width = '100%'}
+knitr::include_graphics("D3_!j.jpg")
+```
+### D3.2 Creation of Dot Plot with Error Bars
+
+Bring Prop and Country in to Columns and Rows fields respectively.
+
+```{r pressure50, echo=FALSE, fig.cap="Bring Prop and Country onto canvas", out.width = '100%'}
+knitr::include_graphics("D3_2a.jpg")
+```
+
+Pull Measure Values from the Tables Pane to the top of the chart created as shown below.
+
+```{r pressure51, echo=FALSE, fig.cap="Bring Measure Values into chart", out.width = '100%'}
+knitr::include_graphics("D3_2b.jpg")
+```
+
+THe resulting chart is as shown. Remove the fields in the Measure Values pane, leaving behind Prop_Lower Limit and Prop_Upper Limit.
+
+```{r pressure52, echo=FALSE, fig.cap="Resulting chart", out.width = '100%'}
+knitr::include_graphics("D3_2c.jpg")
+```
+
+```{r pressure53, echo=FALSE, fig.cap="Chart with only Prop_Upper Limit and Prop_Lower Limit remaining in Measure Values pane", out.width = '100%'}
+knitr::include_graphics("D3_2d.jpg")
+```
+
+Next, synchornise the horizontal axes as shown.
+
+```{r pressure54, echo=FALSE, fig.cap="Synchronize horizontal axes", out.width = '100%'}
+knitr::include_graphics("D3_2e.jpg")
+```
+
+Change Measure Values to Line as shown.
+
+```{r pressure55, echo=FALSE, fig.cap="Change Measure Values to Line", out.width = '100%'}
+knitr::include_graphics("D3_2f.jpg")
+```
+
+Bring Measure Names to the Path icon to arrive at the following chart.
+
+```{r pressure56, echo=FALSE, fig.cap="Bring Measure Names to Path Icon", out.width = '100%'}
+knitr::include_graphics("D3_2g.jpg")
+```
+
+```{r pressure57, echo=FALSE, fig.cap="Resulting Dot Plot with Error Bars", out.width = '100%'}
+knitr::include_graphics("D3_2h.jpg")
+```
+
+Modify the colour and width of the error bars and the dot plots using the Measure Values and AGG(Prop) panes as shown.
+
+```{r pressure58, echo=FALSE, fig.cap="Modification of colour and size of error bars and dot plots", out.width = '100%'}
+knitr::include_graphics("D3_2i.jpg")
+```
+
+Swap Measure Values and AGG(Prop) in the Columns field for the dot plots to appear above the error bars as shown.
+
+```{r pressure59, echo=FALSE, fig.cap="Swap Measure Values and AGG(Prop)", out.width = '100%'}
+knitr::include_graphics("D3_2j.jpg")
+```
+
+For the 2 parameters created, right click and select "Show Parameter" to display them on the right panel. This will allow users to select the different confidence levels and questions to be displayed on the chart.
+
+```{r pressure60, echo=FALSE, fig.cap="Display parameters on the right", out.width = '100%'}
+knitr::include_graphics("D3_2k.jpg")
+```
+
+Rename the chart by double clicking on the title and editing the title in the window that appears as shown.
+
+```{r pressure61, echo=FALSE, fig.cap="Rename title of the chart", out.width = '100%'}
+knitr::include_graphics("D3_2l.jpg")
+```
+
+## D4. Creation of Dashboard
+
+Bring the 2 charts from the Sheets panel into the dashboard and place them side by side as shown.
+
+```{r pressure63, echo=FALSE, fig.cap="Bring created charts onto the dashboard", out.width = '100%'}
+knitr::include_graphics("D4_1a.jpg")
+```
+Edit the size of the dashboard on the left as shown.
+
+```{r pressure64, echo=FALSE, fig.cap="Re-size dashboard", out.width = '100%'}
+knitr::include_graphics("D4_1b.jpg")
+```
+
+Shift the elements of the dashboard around to arrived at desired layout.
+
+```{r pressure65, echo=FALSE, fig.cap="Drag and move elements in dashboard", out.width = '100%'}
+knitr::include_graphics("D4_1c.jpg")
+```
+
+Right click on the Select CI parameter and select Floating to position the dropdown list at the desired place.
+
+```{r pressure67, echo=FALSE, fig.cap="Make Select CI parameter floating", out.width = '100%'}
+knitr::include_graphics("D4_1d.jpg")
+```
+
+Drag the Text icon to the top of the dashboard to create a title. Key in the title in the dialogue box that follows.
+
+```{r pressure68, echo=FALSE, fig.cap="Create title and sub-title for dashboard", out.width = '100%'}
+knitr::include_graphics("D4_1e.jpg")
+```
+
+Finally add another text box to the bottom to acknowledge the source of the data. The final layout of the dashboard is as shown.
+
+```{r pressure69, echo=FALSE, fig.cap="Completed dashboard", out.width = '100%'}
+knitr::include_graphics("D4_1f.jpg")
+```
 
 # E. Observations from the Proposed Data Visualization
 
