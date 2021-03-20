@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/DataVIz Makeover 3/",
+    "title": "DataViz Makeover 3",
+    "description": "Political events that have occurred in Southeast Asian Countries from 2015 to 2020",
+    "author": [
+      {
+        "name": "Daniel Lin",
+        "url": "https://daniel-lin-yy-data-viz.netlify.app/"
+      }
+    ],
+    "date": "2021-03-21",
+    "categories": [],
+    "contents": "\r\nTesting\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-03-21T01:58:44+08:00",
+    "input_file": "DataVizMakeover3.utf8.md"
+  },
+  {
     "path": "posts/DataViz Makeover 2/",
     "title": "DataViz Makeover 2",
     "description": "Public receptivity and perceptions towards COVID-19 vaccinations, Jan 2021",
@@ -15,23 +32,6 @@
     "preview": "posts/DataViz Makeover 2/OriginalVisual.jpg",
     "last_modified": "2021-02-24T11:29:02+08:00",
     "input_file": "DatavizMakeover2.utf8.md"
-  },
-  {
-    "path": "posts/DataVIz Makeover 3/",
-    "title": "DataViz Makeover 3",
-    "description": "Public receptivity and perceptions towards COVID-19 vaccinations, Jan 2021",
-    "author": [
-      {
-        "name": "Daniel Lin",
-        "url": "https://daniel-lin-yy-data-viz.netlify.app/"
-      }
-    ],
-    "date": "2021-02-19",
-    "categories": [],
-    "contents": "\r\nTesting\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2021-03-21T01:54:31+08:00",
-    "input_file": "DataVizMakeover3.utf8.md"
   },
   {
     "path": "posts/DataViz Makeover 1/",

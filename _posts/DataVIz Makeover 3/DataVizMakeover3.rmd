@@ -1,14 +1,14 @@
 ---
 title: "DataViz Makeover 3"
 description: |
-  Public receptivity and perceptions towards COVID-19 vaccinations, Jan 2021 
+  Political events that have occurred in Southeast Asian Countries from 2015 to 2020
 author:
   - name: Daniel Lin 
     email: yongyan.lin.2020@mitb.smu.edu.sg
     url: https://daniel-lin-yy-data-viz.netlify.app/
     affiliation: School of Computing and Information Systems, Singapore Management University
     affiliation_url: https://www.smu.edu.sg/ 
-date: 02-19-2021
+date: 03-21-2021
 output:
   distill::distill_article:
     self_contained: false
