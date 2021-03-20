@@ -24,8 +24,21 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Background
 
-A data visualization was created to reveal the spatio-temporal patterns of armed conflict in selected South-east Asia countries between 2015-2020. The visualization is based on data provided at The Armed Conflict Location & Event Data Project (ACLED). The purpose of this post is to critique the visualization and to propose an alternative visualization 
+A data visualization was created to reveal the spatio-temporal patterns of armed conflict in selected South-east Asia countries between 2015-2020. The visualization is based on data provided at The Armed Conflict Location & Event Data Project (ACLED).
+
+The purpose of this post is to critique the visualization and to propose an alternative visualization and interactive techniques to improve the current design.
+
+# A. Critique of Data Visualization Provided
+
+The original visualizations created by the team is shown below.
+
+```{r pressure, echo=FALSE, fig.cap="Original Data Visualization", out.width = '100%'}
+knitr::include_graphics("Original_Visualization.jpg")
+```
+
+Based on the original data visualization provided, the following are some comments on the clarity and aesthetics aspects of the visualization.
 
 
+## Clarity
 
 
