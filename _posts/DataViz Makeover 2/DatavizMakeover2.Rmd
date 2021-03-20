@@ -539,3 +539,13 @@ knitr::include_graphics("D5_1e.jpg")
 
 # Conclusion
 In conclusion, the side by side comparison of responses, as well as the breakdown by demographic factors, does reveal interesting patterns of receptivity towards COVID-19 vaccination. Public health authorities would gain much from the close analysis of these factors in the planning of programmes and strategies to increase COVID-19 vaccination.
+
+```{r}
+#> Test Table
+
+#S/No    | Contents           
+#--|----------------------------------
+#01      | sdasdiuah  diushdiausdia  ushdiaus    sdsdsds sdsdsd sdsdsds sdsdsd sdsdsd sdsdsd
+#02      | assaodjsoaksjoak sjdaoks joaksjdoaksd joaksdjoa kdsjaoks djoaksdjoaksdj osak
+#03      |sfddsd isjaisjdiasjdia djasidjai sjd ias the quick
+ 
