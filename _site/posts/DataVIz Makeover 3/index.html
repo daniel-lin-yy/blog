@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["DataVizMakeover3_files/anchor-4.2.2/anchor.min.js","DataVizMakeover3_files/bowser-1.9.3/bowser.min.js","DataVizMakeover3_files/distill-2.2.21/template.v2.js","DataVizMakeover3_files/header-attrs-2.6/header-attrs.js","DataVizMakeover3_files/jquery-1.11.3/jquery.min.js","DataVizMakeover3_files/webcomponents-2.0.0/webcomponents.js","Original_Visualization.jpg","Sheet1 (Southeast-Asia_2010-2020_Oct31).hyper"]}
+  {"type":"character","attributes":{},"value":["DataVizMakeover3_files/anchor-4.2.2/anchor.min.js","DataVizMakeover3_files/bowser-1.9.3/bowser.min.js","DataVizMakeover3_files/distill-2.2.21/template.v2.js","DataVizMakeover3_files/header-attrs-2.6/header-attrs.js","DataVizMakeover3_files/jquery-1.11.3/jquery.min.js","DataVizMakeover3_files/webcomponents-2.0.0/webcomponents.js","Original_Visualization.jpg","OverviewFilterEventType.gif","Sheet1 (Southeast-Asia_2010-2020_Oct31).hyper"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2052,10 +2052,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="d-article">
 <h1 id="background">Background</h1>
-<p>A data visualization was created to reveal the spatio-temporal patterns of armed conflict in selected South-east Asia countries between 2015-2020. The visualization is based on data provided at The Armed Conflict Location &amp; Event Data Project (ACLED).</p>
+<p>A data visualization was created to reveal the spatio-temporal patterns of armed conflict in selected South-east Asia countries between 2015-2020. The visualization is based on data provided at The Armed Conflict Location &amp; Event Data Project (ACLED) at <a href="https://acleddata.com/#/dashboard" class="uri">https://acleddata.com/#/dashboard</a>.</p>
 <p>The purpose of this post is to critique the visualization and to propose an alternative visualization and interactive techniques to improve the current design.</p>
 <h1 id="a.-critique-of-data-visualization-provided">A. Critique of Data Visualization Provided</h1>
-<p>The original visualizations created by the team is shown below.</p>
+<p>The original visualization created is shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:pressure"></span>
 <img src="Original_Visualization.jpg" alt="Original Data Visualization" width="100%" />
@@ -2064,8 +2064,77 @@ Figure 1: Original Data Visualization
 </p>
 </div>
 </div>
-<p>Based on the original data visualization provided, the following are some comments on the clarity and aesthetics aspects of the visualization.</p>
+<p>Based on the original data visualization provided, the following are some comments on the clarity, aesthetics and interactivity aspects of the visualization.</p>
 <h2 id="clarity">Clarity</h2>
+<p><strong>1. Spatial boundary of the selected country is not obvious.</strong><br>While the title of the graph on the left specifies the country selected, the area occupied by the selected country is not evident on the map. A darker boundary or highlight of the region to make it more prominent will allow the reader to be better able to visualize the area occupied by the selected country.</p>
+<p><strong>2.Vertical axis label of the time series charts is not appropriate.</strong><br>Currently the axis is labelled as “Count of Sheet 1” which is not an appropriate labelling for the vertical axes of the time series charts on the right. A more appropriate label could be “Number of Occurrences”.</p>
+<p><strong>3. Time series charts on the right did not indicate clearly which region or country the data represented is for.</strong><br>There is no clear indication whether the time series charts on the right represented data of the selected country, the entire region (all Southeast Asian countries) or even the world.</p>
+<p><strong>4. Overview of Country Events needed.</strong><br> Currently the visualization provides a detailed view of the locations of occurrence of political events of each country. An overview of the occurrences of political events of each country would allow for easy inter-country comparison.</p>
+<p><strong>5. No write-up to provide a context to the visualization.</strong><br> There should have been a brief write-up to provide the user some context to the visualization and the key messages to take away from the visualization.</p>
+<h2 id="aesthetics">Aesthetics</h2>
+<p><strong>1. Colours used to represent the events should be consistently applied across charts.</strong><br> For the time series charts on the right, the colours used for the time graphs should be consistent with the colour scheme selected for the various event types for the geospatial chart on the left.</p>
+<p><strong>2. Labels of events could be of a stronger colour and bolded</strong><br> The event types of the time series charts on the right should be labelled more prominently (either via a darker colour or bolded).</p>
+<p><strong>3. Selected country name peppered by dot plots.</strong><br> For the country that is selected, dots representing events are plotted on the map on the left. However in doing so, the name of the country is covered over by the dots and the name of the country is not legible. Although the name of the country selected is still visible in the title, it would be aesthetically more pleasing to either have the name of the country removed or placed in such a way that it is not within the area of the selected country.</p>
+<p><strong>4. Colours of events to correspond to event categories as defined by ACLED</strong><br> Colours selected for event types could correspond to different categories of event types with events within each category (i.e. Violent Events, Demonstration Events, Non-Violent Events) being of the same colour but in different hues. This will allow users to get an indication at first glance on the nature of the main types (categories) of events that have taken place in various countries.</p>
+<h2 id="interactivity">Interactivity</h2>
+<p><strong>1. Visualization allows user to select individual countries for viewing.</strong><br> This is good as users will most likely want to view and compare events and occurrences of and between countries. Assuming that the chart on the right changes and corresponds to the country selected, the user is also able to visualize the developments of events over time for various countries. This feature should be included if not already so.</p>
+<p><strong>2. Visualization should allow user to select desired time periods to be displayed.</strong><br> The visualization should provide interactivity for the user to select the time periods for which the data is displayed, for deeper analysis of changes in events over time. Both the spatial chart and line charts should respond to changes in selected time periods and display the relevant data.</p>
+<p><strong>3. Visualization could allow data of multiple selected countries to be displayed.</strong><br> The visualization should be able to allow the user to view the data for multiple selected countries in the event that comparison between countries is desired. For the time series chart on the right, individual countries’ data should be a different line series.</p>
+<p><strong>4. Details of sub-regions to be displayed on mouse-over.</strong><br> When user mouse-overs a particular sub-region of the selected country, details specific to the sub-region (e.g. sub-region name, number of various events taken place during the time period) should appear. This will provide greater understanding of how the occurrence of events are distributed geographically within the selected country.</p>
+<h1 id="b.-proposed-alternative-visualization-and-interactive-techniques">B. Proposed Alternative Visualization and Interactive Techniques</h1>
+<h2 id="description-of-and-rationale-for-proposed-visualization">Description of and Rationale for Proposed Visualization</h2>
+<p>The visualization is designed to have 2 dashboards, an Overview dashboard of countries involved in the data, and a Country Details dashboard to allow in depth view of events by country.<br></p>
+<h3 id="overview-dashboard">1. Overview Dashboard</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure1"></span>
+<img src="Original_Visualization.jpg" alt="Sketch of proposed Overview dashboard" width="100%" />
+<p class="caption">
+Figure 2: Sketch of proposed Overview dashboard
+</p>
+</div>
+</div>
+<p><strong>1. Overview Dashboard to provide users with context of the data.</strong><br> By providing users with an Overview Dashboard at the start, together with a short write-up, users will have a clearer understanding on what is the context of the data, and how to use the visualization to glean useful insights.</p>
+<p>An Instructions for Use panel will also be provided for Users to be familiar on how to navigate between the dashboards.<br></p>
+<p><strong>2. Filter for Event Types to allow users an overview of the occurrences of various events in different countries</strong><br> A filter to select different event types will be provided so that users are able to select event types of interest and have an overview of which event types have taken place more frequently in different countries as reflected by darker hues of red.</p>
+<p>Red was selected as the main colour to represent the frequency of events taking place in the countries since the events mainly involve conflicts and sometimes violence.</p>
+<p>For example, when user selects event types that are Demonstration Events (i.e. Protests and Riots), and if countries such as Indonesia will be shaded in darker hues of red, this means that Indonesia has greater numbers of Demonstration Events compared to the other countries. Conversely, if Violent Events (i.e. Battles, Explosions/Remote Violence, Violence against civilians) is selected, countries like Myanmmar or Cambodia will likely be coloured in darker hues of red compared to countries like Malaysia, indicating that there is a higher frequency of such events in countries like Myanmmar and Cambodia.</p>
+<p><strong>3. Frequency of occurrence of each Event Type in each country is shown when moused-over individual countries</strong><br> The user will be able to have a view of the occurrences of events by event types in each country when he mouses-over the corresponding countries. A bar chart indicating the number of instances of event type will be provided in the mouse-over tooltip window.</p>
+<p><strong>4. Link to Country Details dashboard</strong><br> To get more in depth view of the events that have taken place in each country, the user will click on the country in the map and will be brought to the Country Details dashboard to visualize the details by country selected.<br></p>
+<h3 id="country-details-dashboard">2. Country Details Dashboard</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure2"></span>
+<img src="Original_Visualization.jpg" alt="Sketch of proposed Country Details dashboard" width="100%" />
+<p class="caption">
+Figure 3: Sketch of proposed Country Details dashboard
+</p>
+</div>
+</div>
+<p><strong>5. Geo-spatial plot of every event allows users to observe any geo-spatial patterns in events</strong><br> Every event is plotted on the map on the left and colour coordinated with its event type. Users will be able to do a visual observation on whether there are any patterns in the geographical distribution of the events by event types for the selected country.<br></p>
+<p><strong>6. The line graphs on the right show the number of instances for each event type for the specified years</strong><br> The line graphs on the right display the numbers of events by event types that had occurred year to year for the selected country.</p>
+<p><strong>7. Tool for viewing the data year by year will allow users to observe the changes and developments in events over time.</strong> By including a tool to allow users to playback or step through manually each year, while observing the corresponding points on the map and line charts, users may be able to spot temporal or spatial patterns in the data.</p>
+<p><strong>8. Inclusion of event details in the tooltips.</strong>*<br> Tooltips will be created so that when users mouse-over each event on the map, the event details such as location of the event, number of fatalities and notes of the events are displayed.</p>
+<h1 id="c.-proposed-data-visualization">C. Proposed Data Visualization</h1>
+<p>The proposed data visualization is found at the following URL:<br> <em><a href="https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DatavizMakeover3_16162605639950/OverviewDashboard?publish=yes" class="uri">https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DatavizMakeover3_16162605639950/OverviewDashboard?publish=yes</a></em> <br><br></p>
+<p>A <strong>screenshot</strong> of the visualization is as follow.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure3"></span>
+<img src="Original_Visualization.jpg" alt="Proposed Data Visualization" width="100%" />
+<p class="caption">
+Figure 4: Proposed Data Visualization
+</p>
+</div>
+</div>
+<h1 id="d.-preparation-of-data-visualization">D. Preparation of Data Visualization</h1>
+<h2 id="d1.-preparation-of-dataset">D1. Preparation of Dataset</h2>
+<h3 id="d1.1-extraction-of-targeted-variables-from-country-datasets-provided">D1.1 Extraction of targeted variables from country datasets provided</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure4"></span>
+<img src="OverviewFilterEventType.gif" alt="Proposed Data Visualization" width="100%" />
+<p class="caption">
+Figure 5: Proposed Data Visualization
+</p>
+</div>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
