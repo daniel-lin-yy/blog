@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["CountryDetailScreenshot.jpg","CountryDetailsSketch.jpg","DataVizMakeover3_files/anchor-4.2.2/anchor.min.js","DataVizMakeover3_files/bowser-1.9.3/bowser.min.js","DataVizMakeover3_files/distill-2.2.21/template.v2.js","DataVizMakeover3_files/header-attrs-2.6/header-attrs.js","DataVizMakeover3_files/jquery-1.11.3/jquery.min.js","DataVizMakeover3_files/webcomponents-2.0.0/webcomponents.js","E1a.jpg","E2a.jpg","E2b.jpg","E2c.jpg","E2d.jpg","E3a.jpg","E3b.jpg","E3c.gif","E4a.jpg","E4b.gif","E5a.jpg","E5a.png","E5b.gif","Original_Visualization.jpg","OverviewFilterEventType.gif","OverviewScreenshot.jpg","OverviewSketch.jpg","Sheet1 (Southeast-Asia_2010-2020_Oct31).hyper"]}
+  {"type":"character","attributes":{},"value":["CountryDetailScreenshot.jpg","CountryDetailsSketch.jpg","D1_1a.png","D1_1b.png","D1_1c.png","D1_1d.png","D1_2a.png","D1_3a.png","D1_3b.png","D1_3c.png","D1_3d.png","DataVizMakeover3_files/anchor-4.2.2/anchor.min.js","DataVizMakeover3_files/bowser-1.9.3/bowser.min.js","DataVizMakeover3_files/distill-2.2.21/template.v2.js","DataVizMakeover3_files/header-attrs-2.6/header-attrs.js","DataVizMakeover3_files/jquery-1.11.3/jquery.min.js","DataVizMakeover3_files/webcomponents-2.0.0/webcomponents.js","E1a.jpg","E2a.jpg","E2b.jpg","E2c.jpg","E2d.jpg","E3a.jpg","E3b.jpg","E3c.gif","E4a.jpg","E4b.gif","E5a.jpg","E5a.png","E5b.gif","Original_Visualization.jpg","OverviewFilterEventType.gif","OverviewScreenshot.jpg","OverviewSketch.jpg","Sheet1 (Southeast-Asia_2010-2020_Oct31).hyper"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1531,12 +1531,80 @@ Figure 5: Proposed Country Details dashboard
 <h1 id="d.-preparation-of-data-visualization">D. Preparation of Data Visualization</h1>
 <p><a name="PartD"></a></p>
 <h2 id="d1.-preparation-of-dataset">D1. Preparation of Dataset</h2>
-<h3 id="d1.1-extraction-of-targeted-variables-from-country-datasets-provided">D1.1 Extraction of targeted variables from country datasets provided</h3>
+<h3 id="d1.1-selection-of-variables-from-acled-dataset-provided">D1.1 Selection of variables from ACLED dataset provided</h3>
+<p>The following variables were removed using EXCEL (right-click columns &gt; delete) as they would not be used in the visualization – TIME_PRECISION, REGION and TIMESTAMP.</p>
 <div class="layout-chunk" data-layout="l-body">
-<div class="figure"><span id="fig:pressure5"></span>
-<img src="OverviewFilterEventType.gif" alt="Proposed Data Visualization" width="100%" />
+<div class="figure"><span id="fig:pressure18"></span>
+<img src="D1_1a.png" alt="Removed TIME_PRECISION" width="100%" />
 <p class="caption">
-Figure 6: Proposed Data Visualization
+Figure 6: Removed TIME_PRECISION
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure19"></span>
+<img src="D1_1b.png" alt="Removed REGION" width="100%" />
+<p class="caption">
+Figure 7: Removed REGION
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure20"></span>
+<img src="D1_1c.png" alt="Removed TIMESTAMP" width="100%" />
+<p class="caption">
+Figure 8: Removed TIMESTAMP
+</p>
+</div>
+</div>
+<h3 id="d1.2-importing-of-dataset-to-tableau">D1.2 Importing of dataset to Tableau</h3>
+<p>The above saved dataset was imported to Tableau by dragging from Windows Explorer to Tableau as shown below.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure21"></span>
+<img src="D1_2a.png" alt="Import dataset to Tableau" width="100%" />
+<p class="caption">
+Figure 9: Import dataset to Tableau
+</p>
+</div>
+</div>
+<h3 id="d1.3-changing-variables-to-the-correct-data-types">D1.3 Changing variables to the correct data types</h3>
+<p>Some of the variables in the imported dataset were not classified as the correct datatypes. The following variables were re-classified accordingly as shown below.</p>
+<ul>
+<li>Year – classified as Date type</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure22"></span>
+<img src="D1_3a.png" alt="Reclassify YEAR to Date type" width="100%" />
+<p class="caption">
+Figure 10: Reclassify YEAR to Date type
+</p>
+</div>
+</div>
+<ul>
+<li>Admin1, Admin2, Admin3 and Location – assigned with Geographic Role as State/Province.</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure23"></span>
+<img src="D1_3b.png" alt="Assign LOCATION with Geographic Role as State/Province" width="100%" />
+<p class="caption">
+Figure 11: Assign LOCATION with Geographic Role as State/Province
+</p>
+</div>
+</div>
+<p>More importantly was to check that Latitude and Longitude variables had been assigned their correct geographic roles.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure24"></span>
+<img src="D1_3c.png" alt="Check Latitude has been assigned Geographic Role &gt; Latitude" width="100%" />
+<p class="caption">
+Figure 12: Check Latitude has been assigned Geographic Role &gt; Latitude
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure25"></span>
+<img src="D1_3d.png" alt="Check Longitude has been assigned Geographic Role &gt; Longitude" width="100%" />
+<p class="caption">
+Figure 13: Check Longitude has been assigned Geographic Role &gt; Longitude
 </p>
 </div>
 </div>
@@ -1547,7 +1615,7 @@ Figure 6: Proposed Data Visualization
 <div class="figure"><span id="fig:pressure6"></span>
 <img src="E1a.jpg" alt="Colour intensity reflecting number of political events" width="100%" />
 <p class="caption">
-Figure 7: Colour intensity reflecting number of political events
+Figure 14: Colour intensity reflecting number of political events
 </p>
 </div>
 </div>
@@ -1556,7 +1624,7 @@ Figure 7: Colour intensity reflecting number of political events
 <div class="figure"><span id="fig:pressure7"></span>
 <img src="E2a.jpg" alt="Philippines has most number of Violent Events" width="100%" />
 <p class="caption">
-Figure 8: Philippines has most number of Violent Events
+Figure 15: Philippines has most number of Violent Events
 </p>
 </div>
 </div>
@@ -1565,7 +1633,7 @@ Figure 8: Philippines has most number of Violent Events
 <div class="figure"><span id="fig:pressure8"></span>
 <img src="E2b.jpg" alt="Main violent event type is Violence against civilians" width="100%" />
 <p class="caption">
-Figure 9: Main violent event type is Violence against civilians
+Figure 16: Main violent event type is Violence against civilians
 </p>
 </div>
 </div>
@@ -1574,7 +1642,7 @@ Figure 9: Main violent event type is Violence against civilians
 <div class="figure"><span id="fig:pressure9"></span>
 <img src="E2c.jpg" alt="Main violent event type is Battles" width="100%" />
 <p class="caption">
-Figure 10: Main violent event type is Battles
+Figure 17: Main violent event type is Battles
 </p>
 </div>
 </div>
@@ -1583,7 +1651,7 @@ Figure 10: Main violent event type is Battles
 <div class="figure"><span id="fig:pressure10"></span>
 <img src="E2d.jpg" alt="Main violent event type is Explosions / Remote Violence" width="100%" />
 <p class="caption">
-Figure 11: Main violent event type is Explosions / Remote Violence
+Figure 18: Main violent event type is Explosions / Remote Violence
 </p>
 </div>
 </div>
@@ -1592,7 +1660,7 @@ Figure 11: Main violent event type is Explosions / Remote Violence
 <div class="figure"><span id="fig:pressure11"></span>
 <img src="E3a.jpg" alt="Indonesia had most number of Demonstration Events" width="100%" />
 <p class="caption">
-Figure 12: Indonesia had most number of Demonstration Events
+Figure 19: Indonesia had most number of Demonstration Events
 </p>
 </div>
 </div>
@@ -1601,7 +1669,7 @@ Figure 12: Indonesia had most number of Demonstration Events
 <div class="figure"><span id="fig:pressure12"></span>
 <img src="E3b.jpg" alt="Majority of Demonstration events are Protests" width="100%" />
 <p class="caption">
-Figure 13: Majority of Demonstration events are Protests
+Figure 20: Majority of Demonstration events are Protests
 </p>
 </div>
 </div>
@@ -1610,7 +1678,7 @@ Figure 13: Majority of Demonstration events are Protests
 <div class="figure"><span id="fig:pressure17"></span>
 <img src="E3c.gif" alt="Majority of Demonstration events are Protests" width="100%" />
 <p class="caption">
-Figure 14: Majority of Demonstration events are Protests
+Figure 21: Majority of Demonstration events are Protests
 </p>
 </div>
 </div>
@@ -1619,7 +1687,7 @@ Figure 14: Majority of Demonstration events are Protests
 <div class="figure"><span id="fig:pressure13"></span>
 <img src="E4a.jpg" alt="Number of Violent Events fell over time" width="100%" />
 <p class="caption">
-Figure 15: Number of Violent Events fell over time
+Figure 22: Number of Violent Events fell over time
 </p>
 </div>
 </div>
@@ -1628,7 +1696,7 @@ Figure 15: Number of Violent Events fell over time
 <div class="figure"><span id="fig:pressure14"></span>
 <img src="E4b.gif" alt="Number of Violent Events fell over time" width="100%" />
 <p class="caption">
-Figure 16: Number of Violent Events fell over time
+Figure 23: Number of Violent Events fell over time
 </p>
 </div>
 </div>
@@ -1637,7 +1705,7 @@ Figure 16: Number of Violent Events fell over time
 <div class="figure"><span id="fig:pressure15"></span>
 <img src="E5a.jpg" alt="Number of Demonstration Events fell before rising sharply" width="100%" />
 <p class="caption">
-Figure 17: Number of Demonstration Events fell before rising sharply
+Figure 24: Number of Demonstration Events fell before rising sharply
 </p>
 </div>
 </div>
@@ -1646,7 +1714,7 @@ Figure 17: Number of Demonstration Events fell before rising sharply
 <div class="figure"><span id="fig:pressure16"></span>
 <img src="E5b.gif" alt="Outward shift in concentration of Demonstration Events" width="100%" />
 <p class="caption">
-Figure 18: Outward shift in concentration of Demonstration Events
+Figure 25: Outward shift in concentration of Demonstration Events
 </p>
 </div>
 </div>

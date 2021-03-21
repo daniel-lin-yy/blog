@@ -160,11 +160,58 @@ knitr::include_graphics("CountryDetailScreenshot.jpg")
 
 ## D1. Preparation of Dataset
 
-### D1.1 Extraction of targeted variables from country datasets provided
+### D1.1 Selection of variables from ACLED dataset provided
 
-```{r pressure5, echo=FALSE, fig.cap="Proposed Data Visualization", out.width = '100%'}
-knitr::include_graphics("OverviewFilterEventType.gif")
+The following variables were removed using EXCEL (right-click columns > delete) as they would not be used in the visualization – TIME_PRECISION, REGION and TIMESTAMP. 
+
+```{r pressure18, echo=FALSE, fig.cap="Removed TIME_PRECISION", out.width = '100%'}
+knitr::include_graphics("D1_1a.png")
 ```
+
+```{r pressure19, echo=FALSE, fig.cap="Removed REGION", out.width = '100%'}
+knitr::include_graphics("D1_1b.png")
+```
+
+```{r pressure20, echo=FALSE, fig.cap="Removed TIMESTAMP", out.width = '100%'}
+knitr::include_graphics("D1_1c.png")
+```
+
+### D1.2 Importing of dataset to Tableau
+
+The above saved dataset was imported to Tableau by dragging from Windows Explorer to Tableau as shown below.
+
+```{r pressure21, echo=FALSE, fig.cap="Import dataset to Tableau", out.width = '100%'}
+knitr::include_graphics("D1_2a.png")
+```
+
+### D1.3 Changing variables to the correct data types
+
+Some of the variables in the imported dataset were not classified as the correct datatypes. The following variables were re-classified accordingly as shown below.
+
+* Year – classified as Date type
+
+```{r pressure22, echo=FALSE, fig.cap="Reclassify YEAR to Date type", out.width = '100%'}
+knitr::include_graphics("D1_3a.png")
+```
+
+* Admin1, Admin2, Admin3 and Location – assigned with Geographic Role as State/Province. 
+
+```{r pressure23, echo=FALSE, fig.cap="Assign LOCATION with Geographic Role as State/Province", out.width = '100%'}
+knitr::include_graphics("D1_3b.png")
+```
+
+More importantly was to check that Latitude and Longitude variables had been assigned their correct geographic roles.
+
+```{r pressure24, echo=FALSE, fig.cap="Check Latitude has been assigned Geographic Role > Latitude", out.width = '100%'}
+knitr::include_graphics("D1_3c.png")
+```
+
+```{r pressure25, echo=FALSE, fig.cap="Check Longitude has been assigned Geographic Role > Longitude", out.width = '100%'}
+knitr::include_graphics("D1_3d.png")
+```
+
+
+
 
 
 # E. Key Observations from the visualization prepared
