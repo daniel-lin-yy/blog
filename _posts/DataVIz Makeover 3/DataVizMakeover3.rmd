@@ -263,13 +263,13 @@ knitr::include_graphics("D2_1_2f.png")
 
 Use Edit Colours by clicking on the down arrow in CNT (Event Type) on the right to change the colour used. Red is selected since the data being reflected is the number of political conflicts, with greater intensity of redness being applied to countries with greater number of such conflicts.
 
-```{r pressure32, echo=FALSE, fig.cap="Edit Colours", out.width = '100%'}
+```{r pressure35, echo=FALSE, fig.cap="Edit Colours", out.width = '100%'}
 knitr::include_graphics("D2_1_2g.png")
 ```
 
 Edit the title of the Legend as shown below.
 
-```{r pressure32, echo=FALSE, fig.cap="Edit Legend Title", out.width = '100%'}
+```{r pressure36, echo=FALSE, fig.cap="Edit Legend Title", out.width = '100%'}
 knitr::include_graphics("D2_1_2h.png")
 ```
 

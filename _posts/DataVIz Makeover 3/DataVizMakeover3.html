@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["CountryDetailScreenshot.jpg","CountryDetailsSketch.jpg","D1_1a.png","D1_1b.png","D1_1c.png","D1_1d.png","D1_2a.png","D1_3a.png","D1_3b.png","D1_3c.png","D1_3d.png","D2_1_1a.png","DataVizMakeover3_files/anchor-4.2.2/anchor.min.js","DataVizMakeover3_files/bowser-1.9.3/bowser.min.js","DataVizMakeover3_files/distill-2.2.21/template.v2.js","DataVizMakeover3_files/header-attrs-2.6/header-attrs.js","DataVizMakeover3_files/jquery-1.11.3/jquery.min.js","DataVizMakeover3_files/webcomponents-2.0.0/webcomponents.js","E1a.jpg","E2a.jpg","E2b.jpg","E2c.jpg","E2d.jpg","E3a.jpg","E3b.jpg","E3c.gif","E4a.jpg","E4b.gif","E5a.jpg","E5a.png","E5b.gif","Original_Visualization.jpg","OverviewFilterEventType.gif","OverviewScreenshot.jpg","OverviewSketch.jpg","Sheet1 (Southeast-Asia_2010-2020_Oct31).hyper"]}
+  {"type":"character","attributes":{},"value":["CountryDetailScreenshot.jpg","CountryDetailsSketch.jpg","D1_1a.png","D1_1b.png","D1_1c.png","D1_1d.png","D1_2a.png","D1_3a.png","D1_3b.png","D1_3c.png","D1_3d.png","D2_1_1a.png","D2_1_2a.png","D2_1_2b.png","D2_1_2c.png","D2_1_2d.png","D2_1_2e.png","D2_1_2f.png","D2_1_2g.png","D2_1_2h.png","D2_1_2i.png","D2_1_2j.png","DataVizMakeover3_files/anchor-4.2.2/anchor.min.js","DataVizMakeover3_files/bowser-1.9.3/bowser.min.js","DataVizMakeover3_files/distill-2.2.21/template.v2.js","DataVizMakeover3_files/header-attrs-2.6/header-attrs.js","DataVizMakeover3_files/jquery-1.11.3/jquery.min.js","DataVizMakeover3_files/webcomponents-2.0.0/webcomponents.js","E1a.jpg","E2a.jpg","E2b.jpg","E2c.jpg","E2d.jpg","E3a.jpg","E3b.jpg","E3c.gif","E4a.jpg","E4b.gif","E5a.jpg","E5a.png","E5b.gif","Original_Visualization.jpg","OverviewFilterEventType.gif","OverviewScreenshot.jpg","OverviewSketch.jpg","Sheet1 (Southeast-Asia_2010-2020_Oct31).hyper"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1619,6 +1619,98 @@ Figure 14: Bring Country, Latitude (generated) and Longitude (generated) into wo
 </p>
 </div>
 </div>
+<p><strong>D2.1.2 Creation of filter to colour code countries by various event types</strong></p>
+<p>Pull Event Type to Colour panel.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure27"></span>
+<img src="D2_1_2a.png" alt="Bring Event Type to Colour panel" width="100%" />
+<p class="caption">
+Figure 15: Bring Event Type to Colour panel
+</p>
+</div>
+</div>
+<p>Change Measure of Event Type to Count as shown below.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure28"></span>
+<img src="D2_1_2b.png" alt="Change Measure of Event Type to Count" width="100%" />
+<p class="caption">
+Figure 16: Change Measure of Event Type to Count
+</p>
+</div>
+</div>
+<p>Now the countries are coloured based on the number of events (Count) that occurred in as shown below.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure29"></span>
+<img src="D2_1_2c.png" alt="Countries coloured based on number of events" width="100%" />
+<p class="caption">
+Figure 17: Countries coloured based on number of events
+</p>
+</div>
+</div>
+<p>To allow users interactivity to view the number of events (by event types) that have occurred in the various countries, a filter for event type is created as follows.</p>
+<p>Bring Event Type into the Filters panel.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure30"></span>
+<img src="D2_1_2d.png" alt="Create filter for Event Type" width="100%" />
+<p class="caption">
+Figure 18: Create filter for Event Type
+</p>
+</div>
+</div>
+<p>Select all the event types in the dialog box that appears.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure31"></span>
+<img src="D2_1_2e.png" alt="Select all event types" width="100%" />
+<p class="caption">
+Figure 19: Select all event types
+</p>
+</div>
+</div>
+<p>Select “Show Filter” for filter to appear on the right for users to select Event Types.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure32"></span>
+<img src="D2_1_2f.png" alt="Select Show Filter" width="100%" />
+<p class="caption">
+Figure 20: Select Show Filter
+</p>
+</div>
+</div>
+<p>Use Edit Colours by clicking on the down arrow in CNT (Event Type) on the right to change the colour used. Red is selected since the data being reflected is the number of political conflicts, with greater intensity of redness being applied to countries with greater number of such conflicts.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure35"></span>
+<img src="D2_1_2g.png" alt="Edit Colours" width="100%" />
+<p class="caption">
+Figure 21: Edit Colours
+</p>
+</div>
+</div>
+<p>Edit the title of the Legend as shown below.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure36"></span>
+<img src="D2_1_2h.png" alt="Edit Legend Title" width="100%" />
+<p class="caption">
+Figure 22: Edit Legend Title
+</p>
+</div>
+</div>
+<p>Pull Country to Label panel to label the countries on the map.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure33"></span>
+<img src="D2_1_2i.png" alt="Pull Country to Label panel" width="100%" />
+<p class="caption">
+Figure 23: Pull Country to Label panel
+</p>
+</div>
+</div>
+<p>Now, users are able to have an overview on the occurrence of political conflicts in the various Southeast Asian countries by selected event types.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure34"></span>
+<img src="D2_1_2j.png" alt="Overview by Event Types" width="100%" />
+<p class="caption">
+Figure 24: Overview by Event Types
+</p>
+</div>
+</div>
 <h1 id="e.-key-observations-from-the-visualization-prepared">E. Key Observations from the visualization prepared</h1>
 <p><a name="PartE"></a></p>
 <p><strong>1. Philippines has the most occurrences of political events while Laos has the least.</strong><br> Philippines has the greatest number of political events while Laos has the lowest number of political events as seen in the following screenshot below where Philippines has the darkest hue of red and Laos has the lightest hue.</p>
@@ -1626,7 +1718,7 @@ Figure 14: Bring Country, Latitude (generated) and Longitude (generated) into wo
 <div class="figure"><span id="fig:pressure6"></span>
 <img src="E1a.jpg" alt="Colour intensity reflecting number of political events" width="100%" />
 <p class="caption">
-Figure 15: Colour intensity reflecting number of political events
+Figure 25: Colour intensity reflecting number of political events
 </p>
 </div>
 </div>
@@ -1635,7 +1727,7 @@ Figure 15: Colour intensity reflecting number of political events
 <div class="figure"><span id="fig:pressure7"></span>
 <img src="E2a.jpg" alt="Philippines has most number of Violent Events" width="100%" />
 <p class="caption">
-Figure 16: Philippines has most number of Violent Events
+Figure 26: Philippines has most number of Violent Events
 </p>
 </div>
 </div>
@@ -1644,7 +1736,7 @@ Figure 16: Philippines has most number of Violent Events
 <div class="figure"><span id="fig:pressure8"></span>
 <img src="E2b.jpg" alt="Main violent event type is Violence against civilians" width="100%" />
 <p class="caption">
-Figure 17: Main violent event type is Violence against civilians
+Figure 27: Main violent event type is Violence against civilians
 </p>
 </div>
 </div>
@@ -1653,7 +1745,7 @@ Figure 17: Main violent event type is Violence against civilians
 <div class="figure"><span id="fig:pressure9"></span>
 <img src="E2c.jpg" alt="Main violent event type is Battles" width="100%" />
 <p class="caption">
-Figure 18: Main violent event type is Battles
+Figure 28: Main violent event type is Battles
 </p>
 </div>
 </div>
@@ -1662,7 +1754,7 @@ Figure 18: Main violent event type is Battles
 <div class="figure"><span id="fig:pressure10"></span>
 <img src="E2d.jpg" alt="Main violent event type is Explosions / Remote Violence" width="100%" />
 <p class="caption">
-Figure 19: Main violent event type is Explosions / Remote Violence
+Figure 29: Main violent event type is Explosions / Remote Violence
 </p>
 </div>
 </div>
@@ -1671,7 +1763,7 @@ Figure 19: Main violent event type is Explosions / Remote Violence
 <div class="figure"><span id="fig:pressure11"></span>
 <img src="E3a.jpg" alt="Indonesia had most number of Demonstration Events" width="100%" />
 <p class="caption">
-Figure 20: Indonesia had most number of Demonstration Events
+Figure 30: Indonesia had most number of Demonstration Events
 </p>
 </div>
 </div>
@@ -1680,7 +1772,7 @@ Figure 20: Indonesia had most number of Demonstration Events
 <div class="figure"><span id="fig:pressure12"></span>
 <img src="E3b.jpg" alt="Majority of Demonstration events are Protests" width="100%" />
 <p class="caption">
-Figure 21: Majority of Demonstration events are Protests
+Figure 31: Majority of Demonstration events are Protests
 </p>
 </div>
 </div>
@@ -1689,7 +1781,7 @@ Figure 21: Majority of Demonstration events are Protests
 <div class="figure"><span id="fig:pressure17"></span>
 <img src="E3c.gif" alt="Majority of Demonstration events are Protests" width="100%" />
 <p class="caption">
-Figure 22: Majority of Demonstration events are Protests
+Figure 32: Majority of Demonstration events are Protests
 </p>
 </div>
 </div>
@@ -1698,7 +1790,7 @@ Figure 22: Majority of Demonstration events are Protests
 <div class="figure"><span id="fig:pressure13"></span>
 <img src="E4a.jpg" alt="Number of Violent Events fell over time" width="100%" />
 <p class="caption">
-Figure 23: Number of Violent Events fell over time
+Figure 33: Number of Violent Events fell over time
 </p>
 </div>
 </div>
@@ -1707,7 +1799,7 @@ Figure 23: Number of Violent Events fell over time
 <div class="figure"><span id="fig:pressure14"></span>
 <img src="E4b.gif" alt="Number of Violent Events fell over time" width="100%" />
 <p class="caption">
-Figure 24: Number of Violent Events fell over time
+Figure 34: Number of Violent Events fell over time
 </p>
 </div>
 </div>
@@ -1716,7 +1808,7 @@ Figure 24: Number of Violent Events fell over time
 <div class="figure"><span id="fig:pressure15"></span>
 <img src="E5a.jpg" alt="Number of Demonstration Events fell before rising sharply" width="100%" />
 <p class="caption">
-Figure 25: Number of Demonstration Events fell before rising sharply
+Figure 35: Number of Demonstration Events fell before rising sharply
 </p>
 </div>
 </div>
@@ -1725,7 +1817,7 @@ Figure 25: Number of Demonstration Events fell before rising sharply
 <div class="figure"><span id="fig:pressure16"></span>
 <img src="E5b.gif" alt="Outward shift in concentration of Demonstration Events" width="100%" />
 <p class="caption">
-Figure 26: Outward shift in concentration of Demonstration Events
+Figure 36: Outward shift in concentration of Demonstration Events
 </p>
 </div>
 </div>
