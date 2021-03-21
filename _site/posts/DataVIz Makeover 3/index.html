@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["CountryDetailScreenshot.jpg","CountryDetailsSketch.jpg","DataVizMakeover3_files/anchor-4.2.2/anchor.min.js","DataVizMakeover3_files/bowser-1.9.3/bowser.min.js","DataVizMakeover3_files/distill-2.2.21/template.v2.js","DataVizMakeover3_files/header-attrs-2.6/header-attrs.js","DataVizMakeover3_files/jquery-1.11.3/jquery.min.js","DataVizMakeover3_files/webcomponents-2.0.0/webcomponents.js","Original_Visualization.jpg","OverviewFilterEventType.gif","OverviewScreenshot.jpg","OverviewSketch.jpg","Sheet1 (Southeast-Asia_2010-2020_Oct31).hyper"]}
+  {"type":"character","attributes":{},"value":["CountryDetailScreenshot.jpg","CountryDetailsSketch.jpg","DataVizMakeover3_files/anchor-4.2.2/anchor.min.js","DataVizMakeover3_files/bowser-1.9.3/bowser.min.js","DataVizMakeover3_files/distill-2.2.21/template.v2.js","DataVizMakeover3_files/header-attrs-2.6/header-attrs.js","DataVizMakeover3_files/jquery-1.11.3/jquery.min.js","DataVizMakeover3_files/webcomponents-2.0.0/webcomponents.js","E1a.jpg","E2a.jpg","E2b.jpg","E2c.jpg","E2d.jpg","E3a.jpg","E3b.jpg","E3c.gif","E4a.jpg","E4b.gif","E5a.jpg","E5a.png","E5b.gif","Original_Visualization.jpg","OverviewFilterEventType.gif","OverviewScreenshot.jpg","OverviewSketch.jpg","Sheet1 (Southeast-Asia_2010-2020_Oct31).hyper"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2054,8 +2054,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <h1 id="background">Background</h1>
 <p>A data visualization was created to reveal the spatio-temporal patterns of armed conflict in selected South-east Asia countries between 2015-2020. The visualization is based on data provided at The Armed Conflict Location &amp; Event Data Project (ACLED) at <a href="https://acleddata.com/#/dashboard" class="uri">https://acleddata.com/#/dashboard</a>.</p>
 <p>The purpose of this post is to critique the visualization and to propose an alternative visualization and interactive techniques to improve the current design.</p>
+<h3 id="contents">Contents</h3>
+<p><a href="#PartA">A. Critique of Data Visualization Provided</a><br> <a href="#PartB">B. Proposed Alternative Visualization and Interactive Techniques</a><br> <a href="#PartC">C. Proposed Data Visualization</a><br> <a href="#PartD">D. Preparation of Data Visualization</a><br> <a href="#PartE">E. Key Observations from the visualization prepared</a><br></p>
 <h1 id="a.-critique-of-data-visualization-provided">A. Critique of Data Visualization Provided</h1>
-<p>The original visualization created is shown below.</p>
+<p><a name="PartA"></a> The original visualization created is shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:pressure"></span>
 <img src="Original_Visualization.jpg" alt="Original Data Visualization" width="100%" />
@@ -2082,6 +2084,7 @@ Figure 1: Original Data Visualization
 <p><strong>3. Visualization could allow data of multiple selected countries to be displayed.</strong><br> The visualization should be able to allow the user to view the data for multiple selected countries in the event that comparison between countries is desired. For the time series chart on the right, individual countries’ data should be a different line series.</p>
 <p><strong>4. Details of sub-regions to be displayed on mouse-over.</strong><br> When user mouse-overs a particular sub-region of the selected country, details specific to the sub-region (e.g. sub-region name, number of various events taken place during the time period) should appear. This will provide greater understanding of how the occurrence of events are distributed geographically within the selected country.</p>
 <h1 id="b.-proposed-alternative-visualization-and-interactive-techniques">B. Proposed Alternative Visualization and Interactive Techniques</h1>
+<p><a name="PartB"></a></p>
 <h2 id="description-of-and-rationale-for-proposed-visualization">Description of and Rationale for Proposed Visualization</h2>
 <p>The visualization is designed to have 2 dashboards, an Overview dashboard of countries involved in the data, and a Country Details dashboard to allow in depth view of events by country.<br></p>
 <h2 id="overview-dashboard">1. Overview Dashboard</h2>
@@ -2114,6 +2117,7 @@ Figure 3: Sketch of proposed Country Details dashboard
 <p><strong>7. Tool for viewing the data year by year will allow users to observe the changes and developments in events over time.</strong> By including a tool to allow users to playback or step through manually each year, while observing the corresponding points on the map and line charts, users may be able to spot temporal or spatial patterns in the data.</p>
 <p><strong>8. Inclusion of event details in the tooltips.</strong><br> Tooltips will be created so that when users mouse-over each event on the map, the event details such as location of the event, number of fatalities and notes of the events are displayed.</p>
 <h1 id="c.-proposed-data-visualization">C. Proposed Data Visualization</h1>
+<p><a name="PartC"></a></p>
 <p>The proposed data visualization is found at the following URL:<br> <em><a href="https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DatavizMakeover3_16162605639950/OverviewDashboard?publish=yes" class="uri">https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DatavizMakeover3_16162605639950/OverviewDashboard?publish=yes</a></em> <br><br></p>
 <p>A <strong>screenshot</strong> of the dashboards are as follow.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2133,6 +2137,7 @@ Figure 5: Proposed Country Details dashboard
 </div>
 </div>
 <h1 id="d.-preparation-of-data-visualization">D. Preparation of Data Visualization</h1>
+<p><a name="PartD"></a></p>
 <h2 id="d1.-preparation-of-dataset">D1. Preparation of Dataset</h2>
 <h3 id="d1.1-extraction-of-targeted-variables-from-country-datasets-provided">D1.1 Extraction of targeted variables from country datasets provided</h3>
 <div class="layout-chunk" data-layout="l-body">
@@ -2140,6 +2145,116 @@ Figure 5: Proposed Country Details dashboard
 <img src="OverviewFilterEventType.gif" alt="Proposed Data Visualization" width="100%" />
 <p class="caption">
 Figure 6: Proposed Data Visualization
+</p>
+</div>
+</div>
+<h1 id="e.-key-observations-from-the-visualization-prepared">E. Key Observations from the visualization prepared</h1>
+<p><a name="PartE"></a></p>
+<p><strong>1. Philippines has the most occurrences of political events while Laos has the least.</strong><br> Philippines has the greatest number of political events while Laos has the lowest number of political events as seen in the following screenshot below where Philippines has the darkest hue of red and Laos has the lightest hue.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure6"></span>
+<img src="E1a.jpg" alt="Colour intensity reflecting number of political events" width="100%" />
+<p class="caption">
+Figure 7: Colour intensity reflecting number of political events
+</p>
+</div>
+</div>
+<p><strong>2. Philippines has the greatest number of Violent events, followed by Myanmar and Thailand.</strong><br> Based on the Overview dashboard, Philippines has the greatest number of violent events (i.e. Battles, Explosions / Remote violence, and Violence against civilians), followed by Myanmar and Thailand. This is observed from the colour intensities of the mentioned countries in comparison to their neighbours when the Violent Events have been selected in the Event Type filter.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure7"></span>
+<img src="E2a.jpg" alt="Philippines has most number of Violent Events" width="100%" />
+<p class="caption">
+Figure 8: Philippines has most number of Violent Events
+</p>
+</div>
+</div>
+<p>Interestingly, the most frequent type of Violent Event is different for the 3 mentioned countries. For Philippines, the most frequent type of Violent Event is Violence against civilians as seen below.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure8"></span>
+<img src="E2b.jpg" alt="Main violent event type is Violence against civilians" width="100%" />
+<p class="caption">
+Figure 9: Main violent event type is Violence against civilians
+</p>
+</div>
+</div>
+<p>For Myanmar, the most frequent type of Violent Event are Battles.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure9"></span>
+<img src="E2c.jpg" alt="Main violent event type is Battles" width="100%" />
+<p class="caption">
+Figure 10: Main violent event type is Battles
+</p>
+</div>
+</div>
+<p>Whereas for Thailand, the most frequent Violent Event type is Explosions / Remote Violence.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure10"></span>
+<img src="E2d.jpg" alt="Main violent event type is Explosions / Remote Violence" width="100%" />
+<p class="caption">
+Figure 11: Main violent event type is Explosions / Remote Violence
+</p>
+</div>
+</div>
+<p><strong>3. In terms of Demonstration Events, Indonesia had the most followed by Myanmar, while Laos had the least. Protests made up the main component of Demonstration Events.</strong><br> From the Overview dashboard, when Demonstration Events (Protests and Riots) were selected, it is observed that Indonesia had the greatest number of such events since it had the darkest hue of red, followed by Myanmar. Laos once again had the lightest hue and hence the lowest number of Demonstration Events.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure11"></span>
+<img src="E3a.jpg" alt="Indonesia had most number of Demonstration Events" width="100%" />
+<p class="caption">
+Figure 12: Indonesia had most number of Demonstration Events
+</p>
+</div>
+</div>
+<p>When moused-over Indonesia, it is observed that the majority of Demonstration Events is made up of Protests with number of Riots being about one fifth as much as number of Protests.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure12"></span>
+<img src="E3b.jpg" alt="Majority of Demonstration events are Protests" width="100%" />
+<p class="caption">
+Figure 13: Majority of Demonstration events are Protests
+</p>
+</div>
+</div>
+<p>The same trend is observed in the other countries, which can be observed when we mouse-over the other countries.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure17"></span>
+<img src="E3c.gif" alt="Majority of Demonstration events are Protests" width="100%" />
+<p class="caption">
+Figure 14: Majority of Demonstration events are Protests
+</p>
+</div>
+</div>
+<p><strong>4. In the Philippines, the number of Violent Events decreased over time, mainly led by the fall in incidents involving Violence against civilians and mainly in the Northern region.</strong><br> From the Country Details dashboard, we are able to view the drop in Violent Events over time was mainly due to the fall in Violence against civilians as shown.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure13"></span>
+<img src="E4a.jpg" alt="Number of Violent Events fell over time" width="100%" />
+<p class="caption">
+Figure 15: Number of Violent Events fell over time
+</p>
+</div>
+</div>
+<p>From the dashboard, when we step through year by year from 2016 to 2020, it is observed that there is an easing up on violent events in the North, more so than the South as shown below.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure14"></span>
+<img src="E4b.gif" alt="Number of Violent Events fell over time" width="100%" />
+<p class="caption">
+Figure 16: Number of Violent Events fell over time
+</p>
+</div>
+</div>
+<p><strong>5. Number of Demonstration Events in Indonesia fell initially before climbing significantly from 2017.</strong><br> The number of Demonstration Events (i.e. Protests and Riots) in Indonesia had a falling trend from 2015 to 2017 but experienced a sharp increase from 2017 to 2020 and this increase is led mainly by the large increase in the numbers of Protests as shown below.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure15"></span>
+<img src="E5a.jpg" alt="Number of Demonstration Events fell before rising sharply" width="100%" />
+<p class="caption">
+Figure 17: Number of Demonstration Events fell before rising sharply
+</p>
+</div>
+</div>
+<p>In terms of geographical patterns of the Demonstration Events, there was a slight shift over time in the concentration of incidents from the Southern Island of Java, outwards towards the Western island of Sumatra, Northern Island of Sulawesi and Western New Guinea in the East as shown below.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure16"></span>
+<img src="E5b.gif" alt="Outward shift in concentration of Demonstration Events" width="100%" />
+<p class="caption">
+Figure 18: Outward shift in concentration of Demonstration Events
 </p>
 </div>
 </div>

@@ -28,8 +28,16 @@ A data visualization was created to reveal the spatio-temporal patterns of armed
 
 The purpose of this post is to critique the visualization and to propose an alternative visualization and interactive techniques to improve the current design.
 
-# A. Critique of Data Visualization Provided
+### Contents
+[A. Critique of Data Visualization Provided](#PartA)<br>
+[B. Proposed Alternative Visualization and Interactive Techniques](#PartB)<br>
+[C. Proposed Data Visualization](#PartC)<br>
+[D. Preparation of Data Visualization](#PartD)<br>
+[E. Key Observations from the visualization prepared](#PartE)<br>
 
+
+# A. Critique of Data Visualization Provided
+<a name="PartA"></a>
 The original visualization created is shown below.
 
 ```{r pressure, echo=FALSE, fig.cap="Original Data Visualization", out.width = '100%'}
@@ -81,7 +89,9 @@ The visualization should be able to allow the user to view the data for multiple
 **4. Details of sub-regions to be displayed on mouse-over.**<br>
 When user mouse-overs a particular sub-region of the selected country, details specific to the sub-region (e.g. sub-region name, number of various events taken place during the time period) should appear. This will provide greater understanding of how the occurrence of events are distributed geographically within the selected country.
 
+
 # B. Proposed Alternative Visualization and Interactive Techniques
+<a name="PartB"></a>
 
 ## Description of and Rationale for Proposed Visualization
 
@@ -129,6 +139,8 @@ By including a tool to allow users to playback or step through manually each yea
 Tooltips will be created so that when users mouse-over each event on the map, the event details such as location of the event, number of fatalities and notes of the events are displayed.
 
 # C. Proposed Data Visualization
+<a name="PartC"></a>
+
 The proposed data visualization is found at the following URL:<br>
 *https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DatavizMakeover3_16162605639950/OverviewDashboard?publish=yes*
 <br><br>
@@ -144,6 +156,7 @@ knitr::include_graphics("CountryDetailScreenshot.jpg")
 ```
 
 # D. Preparation of Data Visualization
+<a name="PartD"></a>
 
 ## D1. Preparation of Dataset
 
@@ -154,12 +167,86 @@ knitr::include_graphics("OverviewFilterEventType.gif")
 ```
 
 
+# E. Key Observations from the visualization prepared
+<a name="PartE"></a>
 
+**1. Philippines has the most occurrences of political events while Laos has the least.**<br>
+Philippines has the greatest number of political events while Laos has the lowest number of political events as seen in the following screenshot below where Philippines has the darkest hue of red and Laos has the lightest hue.
 
+```{r pressure6, echo=FALSE, fig.cap="Colour intensity reflecting number of political events", out.width = '100%'}
+knitr::include_graphics("E1a.jpg")
+```
 
+**2. Philippines has the greatest number of Violent events, followed by Myanmar and Thailand.**<br>
+Based on the Overview dashboard, Philippines has the greatest number of violent events (i.e. Battles, Explosions / Remote violence, and Violence against civilians), followed by Myanmar and Thailand. This is observed from the colour intensities of the mentioned countries in comparison to their neighbours when the Violent Events have been selected in the Event Type filter.
 
+```{r pressure7, echo=FALSE, fig.cap="Philippines has most number of Violent Events", out.width = '100%'}
+knitr::include_graphics("E2a.jpg")
+```
 
+Interestingly, the most frequent type of Violent Event is different for the 3 mentioned countries.
+For Philippines, the most frequent type of Violent Event is Violence against civilians as seen below.
 
+```{r pressure8, echo=FALSE, fig.cap="Main violent event type is Violence against civilians", out.width = '100%'}
+knitr::include_graphics("E2b.jpg")
+```
+
+For Myanmar, the most frequent type of Violent Event are Battles.
+
+```{r pressure9, echo=FALSE, fig.cap="Main violent event type is Battles", out.width = '100%'}
+knitr::include_graphics("E2c.jpg")
+```
+
+Whereas for Thailand, the most frequent Violent Event type is Explosions / Remote Violence.
+
+```{r pressure10, echo=FALSE, fig.cap="Main violent event type is Explosions / Remote Violence", out.width = '100%'}
+knitr::include_graphics("E2d.jpg")
+```
+
+**3. In terms of Demonstration Events, Indonesia had the most followed by Myanmar, while Laos had the least. Protests made up the main component of Demonstration Events.**<br>
+From the Overview dashboard, when Demonstration Events (Protests and Riots) were selected, it is observed that Indonesia had the greatest number of such events since it had the darkest hue of red, followed by Myanmar. Laos once again had the lightest hue and hence the lowest number of Demonstration Events.
+
+```{r pressure11, echo=FALSE, fig.cap="Indonesia had most number of Demonstration Events", out.width = '100%'}
+knitr::include_graphics("E3a.jpg")
+```
+
+When moused-over Indonesia, it is observed that the majority of Demonstration Events is made up of Protests with number of Riots being about one fifth as much as number of Protests.
+
+```{r pressure12, echo=FALSE, fig.cap="Majority of Demonstration events are Protests", out.width = '100%'}
+knitr::include_graphics("E3b.jpg")
+```
+
+The same trend is observed in the other countries, which can be observed when we mouse-over the other countries.
+
+```{r pressure17, echo=FALSE, fig.cap="Majority of Demonstration events are Protests", out.width = '100%'}
+knitr::include_graphics("E3c.gif")
+```
+
+**4. In the Philippines, the number of Violent Events decreased over time, mainly led by the fall in incidents involving Violence against civilians and mainly in the Northern region.**<br>
+From the Country Details dashboard, we are able to view the drop in Violent Events over time was mainly due to the fall in Violence against civilians as shown.
+
+```{r pressure13, echo=FALSE, fig.cap="Number of Violent Events fell over time", out.width = '100%'}
+knitr::include_graphics("E4a.jpg")
+```
+
+From the dashboard, when we step through year by year from 2016 to 2020, it is observed that there is an easing up on violent events in the North, more so than the South as shown below.
+
+```{r pressure14, echo=FALSE, fig.cap="Number of Violent Events fell over time", out.width = '100%'}
+knitr::include_graphics("E4b.gif")
+```
+
+**5. Number of Demonstration Events in Indonesia fell initially before climbing significantly from 2017.**<br>
+The number of Demonstration Events (i.e. Protests and Riots) in Indonesia had a falling trend from 2015 to 2017 but experienced a sharp increase from 2017 to 2020 and this increase is led mainly by the large increase in the numbers of Protests as shown below.
+
+```{r pressure15, echo=FALSE, fig.cap="Number of Demonstration Events fell before rising sharply", out.width = '100%'}
+knitr::include_graphics("E5a.jpg")
+```
+
+In terms of geographical patterns of the Demonstration Events, there was a slight shift over time in the concentration of incidents from the Southern Island of Java, outwards towards the Western island of Sumatra, Northern Island of Sulawesi and Western New Guinea in the East as shown below.
+
+```{r pressure16, echo=FALSE, fig.cap="Outward shift in concentration of Demonstration Events", out.width = '100%'}
+knitr::include_graphics("E5b.gif")
+```
 
 
 
