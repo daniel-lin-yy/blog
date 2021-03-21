@@ -1,7 +1,7 @@
 ---
 title: "DataViz Makeover 3"
 description: |
-  Political events that have occurred in Southeast Asian Countries from 2015 to 2020
+  A visualization of political events that have occurred in Southeast Asian Countries from 2015 to 2020
 author:
   - name: Daniel Lin 
     email: yongyan.lin.2020@mitb.smu.edu.sg
@@ -24,9 +24,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Background
 
-A data visualization was created to reveal the spatio-temporal patterns of armed conflict in selected South-east Asia countries between 2015-2020. The visualization is based on data provided at The Armed Conflict Location & Event Data Project (ACLED) at https://acleddata.com/#/dashboard.
+A data visualization was created to reveal the spatio-temporal patterns of armed conflict in selected South-east Asia countries between 2015 to 2020. The visualization is based on data provided by The Armed Conflict Location & Event Data Project (ACLED) at https://acleddata.com/#/dashboard.
 
-The purpose of this post is to critique the visualization and to propose an alternative visualization and interactive techniques to improve the current design.
+The purpose of this post is to critique the current visualization and to propose an alternative visualization and interactive techniques to improve the current design.
 
 ### Contents
 [A. Critique of Data Visualization Provided](#PartA)<br>
