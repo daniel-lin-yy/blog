@@ -281,9 +281,81 @@ knitr::include_graphics("D2_1_2i.png")
 
 Now, users are able to have an overview on the occurrence of political conflicts in the various Southeast Asian countries by selected event types.
 
-```{r pressure34, echo=FALSE, fig.cap="Overview by Event Types", out.width = '100%'}
+```{r pressure34, echo=FALSE, fig.cap="Overview by Demonstration Events", out.width = '100%'}
 knitr::include_graphics("D2_1_2j.png")
 ```
+
+```{r pressure37, echo=FALSE, fig.cap="Overview by Violent Events", out.width = '100%'}
+knitr::include_graphics("D2_1_2k.png")
+```
+
+**D2.1.3 Creation of Tooltip to provide more details for each country during mouse over.**<br>
+
+On a separate worksheet (CtryEvents), pull Event Type into both Rows and Columns fields. For the Event Type in the Columns field, change Measure to Count to get the following bar chart.
+
+```{r pressure38, echo=FALSE, fig.cap="Create bar charts for Event Types", out.width = '100%'}
+knitr::include_graphics("D2_1_3a.png")
+```
+
+As the events are categorized into Violent Events, Demonstration Events and Non-Violent Events, the order of the event types and colour coding should reflect the categorization. To do so, shift the Violence against civilians up after Explosions/Remote violence. Bring Event Type into the Colour panel and change the colours of the bars such that events in the same categories are of the same colour but different hues.
+
+```{r pressure39, echo=FALSE, fig.cap="Colour bar charts by Event Types", out.width = '100%'}
+knitr::include_graphics("D2_1_3b.png")
+```
+
+Double click on the colour squares in the legend on the right to change colours of the bars.
+
+```{r pressure40, echo=FALSE, fig.cap="Assign similar colours to event types of the same categories", out.width = '100%'}
+knitr::include_graphics("D2_1_3c.png")
+```
+
+Right click on Event Type to hide field label.
+
+```{r pressure41, echo=FALSE, fig.cap="Hide Event Type label", out.width = '100%'}
+knitr::include_graphics("D2_1_3d.png")
+```
+
+Change horizontal axis label by double clicking on the “Count of Event Type”.
+
+```{r pressure42, echo=FALSE, fig.cap="Change horizontal axis label", out.width = '100%'}
+knitr::include_graphics("D2_1_3e.png")
+```
+
+Double Click on the title of the chart to edit the title.
+
+```{r pressure43, echo=FALSE, fig.cap="Update chart title", out.width = '100%'}
+knitr::include_graphics("D2_1_3f.png")
+```
+
+Add data labels to the bar chart by double clicking on the bars and under Mark Label, select “Always Show” as follows.
+
+```{r pressure44, echo=FALSE, fig.cap="Update settings to always show data labels", out.width = '100%'}
+knitr::include_graphics("D2_1_3g.png")
+```
+
+On the Overview worksheet, click on the Tooltip panel to open up the Edit Tooltip dialog box. Insert the created bar chart as Tooltip as below and edit the Tooltip Dialog box as follows.
+
+```{r pressure45, echo=FALSE, fig.cap="Insert the created bar charts as part of Tooltip on the Overview sheet", out.width = '100%'}
+knitr::include_graphics("D2_1_3h.png")
+```
+
+```{r pressure46, echo=FALSE, fig.cap="After inserting the worksheet into Tooltip", out.width = '100%'}
+knitr::include_graphics("D2_1_3i.png")
+```
+
+The following is the resulting display when the mouse is brought over each country.
+
+```{r pressure47, echo=FALSE, fig.cap="Tooltip provides country info when moused-over", out.width = '100%'}
+knitr::include_graphics("D2_1_3j.png")
+```
+
+As the Tooltip window is too small to display the chart, resizing is needed on the CtryEvents sheet to ensure the chart fits into the Tooltip window. 
+
+```{r pressure48, echo=FALSE, fig.cap="Re-size bar chart to ensure fit in Tooltip window", out.width = '100%'}
+knitr::include_graphics("D2_1_3k.png")
+```
+
+
 
 
 

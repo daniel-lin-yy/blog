@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["CountryDetailScreenshot.jpg","CountryDetailsSketch.jpg","D1_1a.png","D1_1b.png","D1_1c.png","D1_1d.png","D1_2a.png","D1_3a.png","D1_3b.png","D1_3c.png","D1_3d.png","D2_1_1a.png","D2_1_2a.png","D2_1_2b.png","D2_1_2c.png","D2_1_2d.png","D2_1_2e.png","D2_1_2f.png","D2_1_2g.png","D2_1_2h.png","D2_1_2i.png","D2_1_2j.png","DataVizMakeover3_files/anchor-4.2.2/anchor.min.js","DataVizMakeover3_files/bowser-1.9.3/bowser.min.js","DataVizMakeover3_files/distill-2.2.21/template.v2.js","DataVizMakeover3_files/header-attrs-2.6/header-attrs.js","DataVizMakeover3_files/jquery-1.11.3/jquery.min.js","DataVizMakeover3_files/webcomponents-2.0.0/webcomponents.js","E1a.jpg","E2a.jpg","E2b.jpg","E2c.jpg","E2d.jpg","E3a.jpg","E3b.jpg","E3c.gif","E4a.jpg","E4b.gif","E5a.jpg","E5a.png","E5b.gif","Original_Visualization.jpg","OverviewFilterEventType.gif","OverviewScreenshot.jpg","OverviewSketch.jpg","Sheet1 (Southeast-Asia_2010-2020_Oct31).hyper"]}
+  {"type":"character","attributes":{},"value":["CountryDetailScreenshot.jpg","CountryDetailsSketch.jpg","D1_1a.png","D1_1b.png","D1_1c.png","D1_1d.png","D1_2a.png","D1_3a.png","D1_3b.png","D1_3c.png","D1_3d.png","D2_1_1a.png","D2_1_2a.png","D2_1_2b.png","D2_1_2c.png","D2_1_2d.png","D2_1_2e.png","D2_1_2f.png","D2_1_2g.png","D2_1_2h.png","D2_1_2i.png","D2_1_2j.png","D2_1_2k.png","D2_1_3a.png","D2_1_3b.png","D2_1_3c.png","D2_1_3d.png","D2_1_3e.png","D2_1_3f.png","D2_1_3g.png","D2_1_3h.png","D2_1_3i.png","D2_1_3j.png","D2_1_3k.png","DataVizMakeover3_files/anchor-4.2.2/anchor.min.js","DataVizMakeover3_files/bowser-1.9.3/bowser.min.js","DataVizMakeover3_files/distill-2.2.21/template.v2.js","DataVizMakeover3_files/header-attrs-2.6/header-attrs.js","DataVizMakeover3_files/jquery-1.11.3/jquery.min.js","DataVizMakeover3_files/webcomponents-2.0.0/webcomponents.js","E1a.jpg","E2a.jpg","E2b.jpg","E2c.jpg","E2d.jpg","E3a.jpg","E3b.jpg","E3c.gif","E4a.jpg","E4b.gif","E5a.jpg","E5a.png","E5b.gif","Original_Visualization.jpg","OverviewFilterEventType.gif","OverviewScreenshot.jpg","OverviewSketch.jpg","Sheet1 (Southeast-Asia_2010-2020_Oct31).hyper"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1705,9 +1705,116 @@ Figure 23: Pull Country to Label panel
 <p>Now, users are able to have an overview on the occurrence of political conflicts in the various Southeast Asian countries by selected event types.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:pressure34"></span>
-<img src="D2_1_2j.png" alt="Overview by Event Types" width="100%" />
+<img src="D2_1_2j.png" alt="Overview by Demonstration Events" width="100%" />
 <p class="caption">
-Figure 24: Overview by Event Types
+Figure 24: Overview by Demonstration Events
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure37"></span>
+<img src="D2_1_2k.png" alt="Overview by Violent Events" width="100%" />
+<p class="caption">
+Figure 25: Overview by Violent Events
+</p>
+</div>
+</div>
+<p><strong>D2.1.3 Creation of Tooltip to provide more details for each country during mouse over.</strong><br></p>
+<p>On a separate worksheet (CtryEvents), pull Event Type into both Rows and Columns fields. For the Event Type in the Columns field, change Measure to Count to get the following bar chart.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure38"></span>
+<img src="D2_1_3a.png" alt="Create bar charts for Event Types" width="100%" />
+<p class="caption">
+Figure 26: Create bar charts for Event Types
+</p>
+</div>
+</div>
+<p>As the events are categorized into Violent Events, Demonstration Events and Non-Violent Events, the order of the event types and colour coding should reflect the categorization. To do so, shift the Violence against civilians up after Explosions/Remote violence. Bring Event Type into the Colour panel and change the colours of the bars such that events in the same categories are of the same colour but different hues.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure39"></span>
+<img src="D2_1_3b.png" alt="Colour bar charts by Event Types" width="100%" />
+<p class="caption">
+Figure 27: Colour bar charts by Event Types
+</p>
+</div>
+</div>
+<p>Double click on the colour squares in the legend on the right to change colours of the bars.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure40"></span>
+<img src="D2_1_3c.png" alt="Assign similar colours to event types of the same categories" width="100%" />
+<p class="caption">
+Figure 28: Assign similar colours to event types of the same categories
+</p>
+</div>
+</div>
+<p>Right click on Event Type to hide field label.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure41"></span>
+<img src="D2_1_3d.png" alt="Hide Event Type label" width="100%" />
+<p class="caption">
+Figure 29: Hide Event Type label
+</p>
+</div>
+</div>
+<p>Change horizontal axis label by double clicking on the “Count of Event Type”.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure42"></span>
+<img src="D2_1_3e.png" alt="Change horizontal axis label" width="100%" />
+<p class="caption">
+Figure 30: Change horizontal axis label
+</p>
+</div>
+</div>
+<p>Double Click on the title of the chart to edit the title.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure43"></span>
+<img src="D2_1_3f.png" alt="Update chart title" width="100%" />
+<p class="caption">
+Figure 31: Update chart title
+</p>
+</div>
+</div>
+<p>Add data labels to the bar chart by double clicking on the bars and under Mark Label, select “Always Show” as follows.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure44"></span>
+<img src="D2_1_3g.png" alt="Update settings to always show data labels" width="100%" />
+<p class="caption">
+Figure 32: Update settings to always show data labels
+</p>
+</div>
+</div>
+<p>On the Overview worksheet, click on the Tooltip panel to open up the Edit Tooltip dialog box. Insert the created bar chart as Tooltip as below and edit the Tooltip Dialog box as follows.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure45"></span>
+<img src="D2_1_3h.png" alt="Insert the created bar charts as part of Tooltip on the Overview sheet" width="100%" />
+<p class="caption">
+Figure 33: Insert the created bar charts as part of Tooltip on the Overview sheet
+</p>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure46"></span>
+<img src="D2_1_3i.png" alt="After inserting the worksheet into Tooltip" width="100%" />
+<p class="caption">
+Figure 34: After inserting the worksheet into Tooltip
+</p>
+</div>
+</div>
+<p>The following is the resulting display when the mouse is brought over each country.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure47"></span>
+<img src="D2_1_3j.png" alt="Tooltip provides country info when moused-over" width="100%" />
+<p class="caption">
+Figure 35: Tooltip provides country info when moused-over
+</p>
+</div>
+</div>
+<p>As the Tooltip window is too small to display the chart, resizing is needed on the CtryEvents sheet to ensure the chart fits into the Tooltip window.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="figure"><span id="fig:pressure48"></span>
+<img src="D2_1_3k.png" alt="Re-size bar chart to ensure fit in Tooltip window" width="100%" />
+<p class="caption">
+Figure 36: Re-size bar chart to ensure fit in Tooltip window
 </p>
 </div>
 </div>
@@ -1718,7 +1825,7 @@ Figure 24: Overview by Event Types
 <div class="figure"><span id="fig:pressure6"></span>
 <img src="E1a.jpg" alt="Colour intensity reflecting number of political events" width="100%" />
 <p class="caption">
-Figure 25: Colour intensity reflecting number of political events
+Figure 37: Colour intensity reflecting number of political events
 </p>
 </div>
 </div>
@@ -1727,7 +1834,7 @@ Figure 25: Colour intensity reflecting number of political events
 <div class="figure"><span id="fig:pressure7"></span>
 <img src="E2a.jpg" alt="Philippines has most number of Violent Events" width="100%" />
 <p class="caption">
-Figure 26: Philippines has most number of Violent Events
+Figure 38: Philippines has most number of Violent Events
 </p>
 </div>
 </div>
@@ -1736,7 +1843,7 @@ Figure 26: Philippines has most number of Violent Events
 <div class="figure"><span id="fig:pressure8"></span>
 <img src="E2b.jpg" alt="Main violent event type is Violence against civilians" width="100%" />
 <p class="caption">
-Figure 27: Main violent event type is Violence against civilians
+Figure 39: Main violent event type is Violence against civilians
 </p>
 </div>
 </div>
@@ -1745,7 +1852,7 @@ Figure 27: Main violent event type is Violence against civilians
 <div class="figure"><span id="fig:pressure9"></span>
 <img src="E2c.jpg" alt="Main violent event type is Battles" width="100%" />
 <p class="caption">
-Figure 28: Main violent event type is Battles
+Figure 40: Main violent event type is Battles
 </p>
 </div>
 </div>
@@ -1754,7 +1861,7 @@ Figure 28: Main violent event type is Battles
 <div class="figure"><span id="fig:pressure10"></span>
 <img src="E2d.jpg" alt="Main violent event type is Explosions / Remote Violence" width="100%" />
 <p class="caption">
-Figure 29: Main violent event type is Explosions / Remote Violence
+Figure 41: Main violent event type is Explosions / Remote Violence
 </p>
 </div>
 </div>
@@ -1763,7 +1870,7 @@ Figure 29: Main violent event type is Explosions / Remote Violence
 <div class="figure"><span id="fig:pressure11"></span>
 <img src="E3a.jpg" alt="Indonesia had most number of Demonstration Events" width="100%" />
 <p class="caption">
-Figure 30: Indonesia had most number of Demonstration Events
+Figure 42: Indonesia had most number of Demonstration Events
 </p>
 </div>
 </div>
@@ -1772,7 +1879,7 @@ Figure 30: Indonesia had most number of Demonstration Events
 <div class="figure"><span id="fig:pressure12"></span>
 <img src="E3b.jpg" alt="Majority of Demonstration events are Protests" width="100%" />
 <p class="caption">
-Figure 31: Majority of Demonstration events are Protests
+Figure 43: Majority of Demonstration events are Protests
 </p>
 </div>
 </div>
@@ -1781,7 +1888,7 @@ Figure 31: Majority of Demonstration events are Protests
 <div class="figure"><span id="fig:pressure17"></span>
 <img src="E3c.gif" alt="Majority of Demonstration events are Protests" width="100%" />
 <p class="caption">
-Figure 32: Majority of Demonstration events are Protests
+Figure 44: Majority of Demonstration events are Protests
 </p>
 </div>
 </div>
@@ -1790,7 +1897,7 @@ Figure 32: Majority of Demonstration events are Protests
 <div class="figure"><span id="fig:pressure13"></span>
 <img src="E4a.jpg" alt="Number of Violent Events fell over time" width="100%" />
 <p class="caption">
-Figure 33: Number of Violent Events fell over time
+Figure 45: Number of Violent Events fell over time
 </p>
 </div>
 </div>
@@ -1799,7 +1906,7 @@ Figure 33: Number of Violent Events fell over time
 <div class="figure"><span id="fig:pressure14"></span>
 <img src="E4b.gif" alt="Number of Violent Events fell over time" width="100%" />
 <p class="caption">
-Figure 34: Number of Violent Events fell over time
+Figure 46: Number of Violent Events fell over time
 </p>
 </div>
 </div>
@@ -1808,7 +1915,7 @@ Figure 34: Number of Violent Events fell over time
 <div class="figure"><span id="fig:pressure15"></span>
 <img src="E5a.jpg" alt="Number of Demonstration Events fell before rising sharply" width="100%" />
 <p class="caption">
-Figure 35: Number of Demonstration Events fell before rising sharply
+Figure 47: Number of Demonstration Events fell before rising sharply
 </p>
 </div>
 </div>
@@ -1817,7 +1924,7 @@ Figure 35: Number of Demonstration Events fell before rising sharply
 <div class="figure"><span id="fig:pressure16"></span>
 <img src="E5b.gif" alt="Outward shift in concentration of Demonstration Events" width="100%" />
 <p class="caption">
-Figure 36: Outward shift in concentration of Demonstration Events
+Figure 48: Outward shift in concentration of Demonstration Events
 </p>
 </div>
 </div>
