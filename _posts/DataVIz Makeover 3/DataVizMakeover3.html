@@ -115,7 +115,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["DataVizMakeover3_files/anchor-4.2.2/anchor.min.js","DataVizMakeover3_files/bowser-1.9.3/bowser.min.js","DataVizMakeover3_files/distill-2.2.21/template.v2.js","DataVizMakeover3_files/header-attrs-2.6/header-attrs.js","DataVizMakeover3_files/jquery-1.11.3/jquery.min.js","DataVizMakeover3_files/webcomponents-2.0.0/webcomponents.js","Original_Visualization.jpg","OverviewFilterEventType.gif","Sheet1 (Southeast-Asia_2010-2020_Oct31).hyper"]}
+  {"type":"character","attributes":{},"value":["CountryDetailsSketch.jpg","DataVizMakeover3_files/anchor-4.2.2/anchor.min.js","DataVizMakeover3_files/bowser-1.9.3/bowser.min.js","DataVizMakeover3_files/distill-2.2.21/template.v2.js","DataVizMakeover3_files/header-attrs-2.6/header-attrs.js","DataVizMakeover3_files/jquery-1.11.3/jquery.min.js","DataVizMakeover3_files/webcomponents-2.0.0/webcomponents.js","Original_Visualization.jpg","OverviewFilterEventType.gif","OverviewSketch.jpg","Sheet1 (Southeast-Asia_2010-2020_Oct31).hyper"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1476,10 +1476,10 @@ Figure 1: Original Data Visualization
 <h1 id="b.-proposed-alternative-visualization-and-interactive-techniques">B. Proposed Alternative Visualization and Interactive Techniques</h1>
 <h2 id="description-of-and-rationale-for-proposed-visualization">Description of and Rationale for Proposed Visualization</h2>
 <p>The visualization is designed to have 2 dashboards, an Overview dashboard of countries involved in the data, and a Country Details dashboard to allow in depth view of events by country.<br></p>
-<h3 id="overview-dashboard">1. Overview Dashboard</h3>
+<h2 id="overview-dashboard">1. Overview Dashboard</h2>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:pressure1"></span>
-<img src="Original_Visualization.jpg" alt="Sketch of proposed Overview dashboard" width="100%" />
+<img src="OverviewSketch.jpg" alt="Sketch of proposed Overview dashboard" width="100%" />
 <p class="caption">
 Figure 2: Sketch of proposed Overview dashboard
 </p>
@@ -1492,10 +1492,10 @@ Figure 2: Sketch of proposed Overview dashboard
 <p>For example, when user selects event types that are Demonstration Events (i.e. Protests and Riots), and if countries such as Indonesia will be shaded in darker hues of red, this means that Indonesia has greater numbers of Demonstration Events compared to the other countries. Conversely, if Violent Events (i.e. Battles, Explosions/Remote Violence, Violence against civilians) is selected, countries like Myanmmar or Cambodia will likely be coloured in darker hues of red compared to countries like Malaysia, indicating that there is a higher frequency of such events in countries like Myanmmar and Cambodia.</p>
 <p><strong>3. Frequency of occurrence of each Event Type in each country is shown when moused-over individual countries</strong><br> The user will be able to have a view of the occurrences of events by event types in each country when he mouses-over the corresponding countries. A bar chart indicating the number of instances of event type will be provided in the mouse-over tooltip window.</p>
 <p><strong>4. Link to Country Details dashboard</strong><br> To get more in depth view of the events that have taken place in each country, the user will click on the country in the map and will be brought to the Country Details dashboard to visualize the details by country selected.<br></p>
-<h3 id="country-details-dashboard">2. Country Details Dashboard</h3>
+<h2 id="country-details-dashboard">2. Country Details Dashboard</h2>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:pressure2"></span>
-<img src="Original_Visualization.jpg" alt="Sketch of proposed Country Details dashboard" width="100%" />
+<img src="CountryDetailsSketch.jpg" alt="Sketch of proposed Country Details dashboard" width="100%" />
 <p class="caption">
 Figure 3: Sketch of proposed Country Details dashboard
 </p>
@@ -1504,7 +1504,7 @@ Figure 3: Sketch of proposed Country Details dashboard
 <p><strong>5. Geo-spatial plot of every event allows users to observe any geo-spatial patterns in events</strong><br> Every event is plotted on the map on the left and colour coordinated with its event type. Users will be able to do a visual observation on whether there are any patterns in the geographical distribution of the events by event types for the selected country.<br></p>
 <p><strong>6. The line graphs on the right show the number of instances for each event type for the specified years</strong><br> The line graphs on the right display the numbers of events by event types that had occurred year to year for the selected country.</p>
 <p><strong>7. Tool for viewing the data year by year will allow users to observe the changes and developments in events over time.</strong> By including a tool to allow users to playback or step through manually each year, while observing the corresponding points on the map and line charts, users may be able to spot temporal or spatial patterns in the data.</p>
-<p><strong>8. Inclusion of event details in the tooltips.</strong>*<br> Tooltips will be created so that when users mouse-over each event on the map, the event details such as location of the event, number of fatalities and notes of the events are displayed.</p>
+<p><strong>8. Inclusion of event details in the tooltips.</strong><br> Tooltips will be created so that when users mouse-over each event on the map, the event details such as location of the event, number of fatalities and notes of the events are displayed.</p>
 <h1 id="c.-proposed-data-visualization">C. Proposed Data Visualization</h1>
 <p>The proposed data visualization is found at the following URL:<br> <em><a href="https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DatavizMakeover3_16162605639950/OverviewDashboard?publish=yes" class="uri">https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DatavizMakeover3_16162605639950/OverviewDashboard?publish=yes</a></em> <br><br></p>
 <p>A <strong>screenshot</strong> of the visualization is as follow.</p>

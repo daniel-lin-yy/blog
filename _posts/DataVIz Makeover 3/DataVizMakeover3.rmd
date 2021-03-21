@@ -87,10 +87,10 @@ When user mouse-overs a particular sub-region of the selected country, details s
 
 The visualization is designed to have 2 dashboards, an Overview dashboard of countries involved in the data, and a Country Details dashboard to allow in depth view of events by country.<br>
 
-### 1. Overview Dashboard
+## 1. Overview Dashboard
 
 ```{r pressure1, echo=FALSE, fig.cap="Sketch of proposed Overview dashboard", out.width = '100%'}
-knitr::include_graphics("Original_Visualization.jpg")
+knitr::include_graphics("OverviewSketch.jpg")
 ```
 
 **1. Overview Dashboard to provide users with context of the data.**<br>
@@ -111,10 +111,10 @@ The user will be able to have a view of the occurrences of events by event types
 **4. Link to Country Details dashboard**<br>
 To get more in depth view of the events that have taken place in each country, the user will click on the country in the map and will be brought to the Country Details dashboard to visualize the details by country selected.<br>
 
-### 2. Country Details Dashboard
+## 2. Country Details Dashboard
 
 ```{r pressure2, echo=FALSE, fig.cap="Sketch of proposed Country Details dashboard", out.width = '100%'}
-knitr::include_graphics("Original_Visualization.jpg")
+knitr::include_graphics("CountryDetailsSketch.jpg")
 ```
 **5. Geo-spatial plot of every event allows users to observe any geo-spatial patterns in events**<br>
 Every event is plotted on the map on the left and colour coordinated with its event type. Users will be able to do a visual observation on whether there are any patterns in the geographical distribution of the events by event types for the selected country.<br>
@@ -125,9 +125,8 @@ The line graphs on the right display the numbers of events by event types that h
 **7. Tool for viewing the data year by year will allow users to observe the changes and developments in events over time.**
 By including a tool to allow users to playback or step through manually each year, while observing the corresponding points on the map and line charts, users may be able to spot temporal or spatial patterns in the data.
 
-**8. Inclusion of event details in the tooltips.***<br>
+**8. Inclusion of event details in the tooltips.**<br>
 Tooltips will be created so that when users mouse-over each event on the map, the event details such as location of the event, number of fatalities and notes of the events are displayed.
-
 
 # C. Proposed Data Visualization
 The proposed data visualization is found at the following URL:<br>
