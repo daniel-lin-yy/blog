@@ -133,10 +133,14 @@ The proposed data visualization is found at the following URL:<br>
 *https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DatavizMakeover3_16162605639950/OverviewDashboard?publish=yes*
 <br><br>
 
-A **screenshot** of the visualization is as follow.
+A **screenshot** of the dashboards are as follow.
 
-```{r pressure3, echo=FALSE, fig.cap="Proposed Data Visualization", out.width = '100%'}
-knitr::include_graphics("Original_Visualization.jpg")
+```{r pressure3, echo=FALSE, fig.cap="Proposed Overview dashboard", out.width = '100%'}
+knitr::include_graphics("OverviewScreenshot.jpg")
+```
+
+```{r pressure4, echo=FALSE, fig.cap="Proposed Country Details dashboard", out.width = '100%'}
+knitr::include_graphics("CountryDetailScreenshot.jpg")
 ```
 
 # D. Preparation of Data Visualization
@@ -145,7 +149,7 @@ knitr::include_graphics("Original_Visualization.jpg")
 
 ### D1.1 Extraction of targeted variables from country datasets provided
 
-```{r pressure4, echo=FALSE, fig.cap="Proposed Data Visualization", out.width = '100%'}
+```{r pressure5, echo=FALSE, fig.cap="Proposed Data Visualization", out.width = '100%'}
 knitr::include_graphics("OverviewFilterEventType.gif")
 ```
 
