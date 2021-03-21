@@ -210,6 +210,82 @@ knitr::include_graphics("D1_3c.png")
 knitr::include_graphics("D1_3d.png")
 ```
 
+## D2 Creation of Worksheets
+
+### D2.1 Creation of Overview Worksheet
+
+**D2.1.1 Pull Longitude, Latitude and Country onto workspace**<br>
+Pull Longitude (generated) and Latitude (generated) into the Columns and Rows fields respectively, followed by Country into the Detail panel to create the regions of the countries in the dataset.
+
+```{r pressure26, echo=FALSE, fig.cap="Bring Country, Latitude (generated) and Longitude (generated) into workspace", out.width = '100%'}
+knitr::include_graphics("D2_1_1a.png")
+```
+
+**D2.1.2 Creation of filter to colour code countries by various event types**
+
+Pull Event Type to Colour panel.
+
+```{r pressure27, echo=FALSE, fig.cap="Bring Event Type to Colour panel", out.width = '100%'}
+knitr::include_graphics("D2_1_2a.png")
+```
+
+Change Measure of Event Type to Count as shown below.
+
+```{r pressure28, echo=FALSE, fig.cap="Change Measure of Event Type to Count", out.width = '100%'}
+knitr::include_graphics("D2_1_2b.png")
+```
+
+Now the countries are coloured based on the number of events (Count) that occurred in as shown below.
+
+```{r pressure29, echo=FALSE, fig.cap="Countries coloured based on number of events", out.width = '100%'}
+knitr::include_graphics("D2_1_2c.png")
+```
+
+To allow users interactivity to view the number of events (by event types) that have occurred in the various countries, a filter for event type is created as follows.
+
+Bring Event Type into the Filters panel.
+
+```{r pressure30, echo=FALSE, fig.cap="Create filter for Event Type", out.width = '100%'}
+knitr::include_graphics("D2_1_2d.png")
+```
+
+Select all the event types in the dialog box that appears.
+
+```{r pressure31, echo=FALSE, fig.cap="Select all event types", out.width = '100%'}
+knitr::include_graphics("D2_1_2e.png")
+```
+
+Select “Show Filter” for filter to appear on the right for users to select Event Types.
+
+```{r pressure32, echo=FALSE, fig.cap="Select Show Filter", out.width = '100%'}
+knitr::include_graphics("D2_1_2f.png")
+```
+
+Use Edit Colours by clicking on the down arrow in CNT (Event Type) on the right to change the colour used. Red is selected since the data being reflected is the number of political conflicts, with greater intensity of redness being applied to countries with greater number of such conflicts.
+
+```{r pressure32, echo=FALSE, fig.cap="Edit Colours", out.width = '100%'}
+knitr::include_graphics("D2_1_2g.png")
+```
+
+Edit the title of the Legend as shown below.
+
+```{r pressure32, echo=FALSE, fig.cap="Edit Legend Title", out.width = '100%'}
+knitr::include_graphics("D2_1_2h.png")
+```
+
+Pull Country to Label panel to label the countries on the map.
+
+```{r pressure33, echo=FALSE, fig.cap="Pull Country to Label panel", out.width = '100%'}
+knitr::include_graphics("D2_1_2i.png")
+```
+
+Now, users are able to have an overview on the occurrence of political conflicts in the various Southeast Asian countries by selected event types.
+
+```{r pressure34, echo=FALSE, fig.cap="Overview by Event Types", out.width = '100%'}
+knitr::include_graphics("D2_1_2j.png")
+```
+
+
 
 
 
