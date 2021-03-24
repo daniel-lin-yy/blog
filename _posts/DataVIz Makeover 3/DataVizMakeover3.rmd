@@ -355,6 +355,190 @@ As the Tooltip window is too small to display the chart, resizing is needed on t
 knitr::include_graphics("D2_1_3k.png")
 ```
 
+The dimension of the Tooltip window is also edited to allow a larger Tooltip to be displayed.
+
+```{r pressure49, echo=FALSE, fig.cap="Edit size of bar chart to fit in Tooltip window", out.width = '100%'}
+knitr::include_graphics("D2_1_3l.png")
+```
+
+Update the title of the Overview by double-clicking on the title.
+
+```{r pressure50, echo=FALSE, fig.cap="Updated title of Overview worksheet", out.width = '100%'}
+knitr::include_graphics("D2_1_3m.png")
+```
+
+**D2.1.4 Insertion of filter for Year**<br>
+
+Pull Year into the Filters pane as shown and select Year in the resulting Filter Field window that appears.
+
+```{r pressure51, echo=FALSE, fig.cap="Create Year filter", out.width = '100%'}
+knitr::include_graphics("D2_1_3n.png")
+```
+
+```{r pressure52, echo=FALSE, fig.cap="Select Years to be displayed", out.width = '100%'}
+knitr::include_graphics("D2_1_3o.png")
+```
+
+In the following window, select the relevant years that we are interested in – 2015 to 2020.
+
+```{r pressure53, echo=FALSE, fig.cap="Select Years 2015 to 2020", out.width = '100%'}
+knitr::include_graphics("D2_1_3p.png")
+```
+
+Update the title of the graph with the period of interest (2015-2020) and the resulting appearance of the dashboard is as follow.
+
+```{r pressure54, echo=FALSE, fig.cap="Resulting display", out.width = '100%'}
+knitr::include_graphics("D2_1_3q.png")
+```
+
+### D2.2 Creation of Detailed Worksheet
+
+**D2.2.1 Bring Event Id Cnty, Latitude and Longitude onto the workspace.**
+
+Pull Event Id Cnty onto the Detail panel, Latitude and Longitude onto the Rows and Columns field as shown below.
+
+```{r pressure55, echo=FALSE, fig.cap="Pull Event Id Cnty, Latitude and Longitude in workspace", out.width = '100%'}
+knitr::include_graphics("D2_2_1a.png")
+```
+
+Pull Event Type onto the Colour panel to get the following screen.
+
+```{r pressure56, echo=FALSE, fig.cap="Colour by Event Type", out.width = '100%'}
+knitr::include_graphics("D2_2_1b.png")
+```
+
+***D2.2.2 Create filter for Event Type to allow users to view events by event types.***
+
+Pull Event Type into the Filters pane as shown below.
+
+```{r pressure57, echo=FALSE, fig.cap="Create Event Type filter", out.width = '100%'}
+knitr::include_graphics("D2_2_2a.png")
+```
+
+Select all in the Filter window that appears.
+
+```{r pressure58, echo=FALSE, fig.cap="Create Event Type filter", out.width = '100%'}
+knitr::include_graphics("D2_2_2b.png")
+```
+
+Select "Show Filters" at the Event Type in the Filters panel.
+
+```{r pressure59, echo=FALSE, fig.cap="Show Event Type filter", out.width = '100%'}
+knitr::include_graphics("D2_2_2c.png")
+```
+
+**D2.2.3 Create a filter for Country to allow users to view events by country.**
+
+Pull Country to the Filters panel.
+
+```{r pressure60, echo=FALSE, fig.cap="Create Country filter", out.width = '100%'}
+knitr::include_graphics("D2_2_3a.png")
+```
+
+Select all the countries.
+
+```{r pressure61, echo=FALSE, fig.cap="Select all countries", out.width = '100%'}
+knitr::include_graphics("D2_2_3b.png")
+```
+
+Select Show Filter in the Filters panel for Country.
+
+```{r pressure62, echo=FALSE, fig.cap="Show Country filter", out.width = '100%'}
+knitr::include_graphics("D2_2_3c.png")
+```
+
+Now, if a country is selected, the events for the specified country appears. However the boundary of the country is not obvious as shown.
+
+```{r pressure63, echo=FALSE, fig.cap="Show Country filter", out.width = '100%'}
+knitr::include_graphics("D2_2_3d.png")
+```
+
+**D2.2.4 Create a layer for Country to highlight the region and outline of the country selected.**
+
+Pull the Country dimension onto the workspace to “Add a Marks Layer”.
+
+```{r pressure64, echo=FALSE, fig.cap="Pull Country onto workspace", out.width = '100%'}
+knitr::include_graphics("D2_2_4a.png")
+```
+
+The result is a point representing the Country location.
+
+```{r pressure65, echo=FALSE, fig.cap="Blue dot represents Country location", out.width = '100%'}
+knitr::include_graphics("D2_2_4b.png")
+```
+
+In the Country panel, change Marks type from Automatic to Map as shown.
+
+```{r pressure66, echo=FALSE, fig.cap="Change Marks type to Map", out.width = '100%'}
+knitr::include_graphics("D2_2_4c.png")
+```
+
+The following is the resulting display.
+
+```{r pressure67, echo=FALSE, fig.cap="Shaded region represents Country area", out.width = '100%'}
+knitr::include_graphics("D2_2_4d.png")
+```
+
+As the points need to appear above the highlighted area, pull the Country pane to be below the Latitude pane. The following is the resulting display.
+
+```{r pressure68, echo=FALSE, fig.cap="Resulting display where country selected is highlighted", out.width = '100%'}
+knitr::include_graphics("D2_2_4e.png")
+```
+
+Pull the Country variable into the Detail panel and remove the colour by Country icon as shown so that the countries are highlighted with the same colour.
+
+```{r pressure69, echo=FALSE, fig.cap="Pull Country to details panel", out.width = '100%'}
+knitr::include_graphics("D2_2_4f.png")
+```
+
+```{r pressure70, echo=FALSE, fig.cap="Remove colour by Country", out.width = '100%'}
+knitr::include_graphics("D2_2_4g.png")
+```
+
+Click on the Colour panel to edit the colour of the highlight.
+
+```{r pressure71, echo=FALSE, fig.cap="Edit colour of Country highlight", out.width = '100%'}
+knitr::include_graphics("D2_2_4h.png")
+```
+
+The resulting display is as shown below, where the region of the selected country is highlighted in pink with events plotted on top. The boundary of the selected country is also clearly demarcated.
+
+```{r pressure72, echo=FALSE, fig.cap="Resulting display", out.width = '100%'}
+knitr::include_graphics("D2_2_4i.png")
+```
+
+**D2.2.5 Creation of an interactive slider for users to scroll through each year**
+
+By adding an interactive tool to scroll through individual years, the user will be able to view the development and changes of the occurrence of events.
+
+This is done by pulling Year to Pages.
+
+```{r pressure73, echo=FALSE, fig.cap="Pull Year to Pages", out.width = '100%'}
+knitr::include_graphics("D2_2_5a.png")
+```
+
+A tool on the right appears, allowing users to select the year that they are interested in and to also play a slideshow that will display the events in a chronological manner.
+
+```{r pressure74, echo=FALSE, fig.cap="Use tool on the right to select year or to play slideshow", out.width = '100%'}
+knitr::include_graphics("D2_2_5b.png")
+```
+
+**D2.2.6 Make circles representing events more distinct.**
+
+Currently the circles plotted for each event is overlapping and does not appear in a clear manner. To make the circles more distinct, first select Circle in the Marks drop down list as shown.
+
+```{r pressure75, echo=FALSE, fig.cap="Select Circle in the Marks drop down list", out.width = '100%'}
+knitr::include_graphics("D2_2_6a.png")
+```
+
+Then click on the Colour panel and then on the Border colour to select a dark colour for the border of the circles representing the events as shown.
+
+```{r pressure76, echo=FALSE, fig.cap="Select Circle colour and border", out.width = '100%'}
+knitr::include_graphics("D2_2_6b.png")
+```
+
+
+
 
 
 
