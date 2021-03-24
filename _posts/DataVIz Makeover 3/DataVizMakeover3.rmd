@@ -28,6 +28,8 @@ A data visualization was created to reveal the spatio-temporal patterns of armed
 
 The purpose of this post is to critique the current visualization and to propose an alternative visualization and interactive techniques to improve the current design.
 
+<a name="Top"></a>
+
 ### Contents
 [A. Critique of Data Visualization Provided](#PartA)<br>
 [B. Proposed Alternative Visualization and Interactive Techniques](#PartB)<br>
@@ -35,9 +37,10 @@ The purpose of this post is to critique the current visualization and to propose
 [D. Preparation of Data Visualization](#PartD)<br>
 [E. Key Observations from the visualization prepared](#PartE)<br>
 
+<a name="PartA"></a>
 
 # A. Critique of Data Visualization Provided
-<a name="PartA"></a>
+
 The original visualization created is shown below.
 
 ```{r pressure, echo=FALSE, fig.cap="Original Data Visualization", out.width = '100%'}
@@ -89,9 +92,11 @@ The visualization should be able to allow the user to view the data for multiple
 **4. Details of sub-regions to be displayed on mouse-over.**<br>
 When user mouse-overs a particular sub-region of the selected country, details specific to the sub-region (e.g. sub-region name, number of various events taken place during the time period) should appear. This will provide greater understanding of how the occurrence of events are distributed geographically within the selected country.
 
+[Back to Top](#Top)
+
+<a name="PartB"></a>
 
 # B. Proposed Alternative Visualization and Interactive Techniques
-<a name="PartB"></a>
 
 ## Description of and Rationale for Proposed Visualization
 
@@ -138,8 +143,11 @@ By including a tool to allow users to playback or step through manually each yea
 **8. Inclusion of event details in the tooltips.**<br>
 Tooltips will be created so that when users mouse-over each event on the map, the event details such as location of the event, number of fatalities and notes of the events are displayed.
 
-# C. Proposed Data Visualization
+[Back to Top](#Top)
+
 <a name="PartC"></a>
+
+# C. Proposed Data Visualization
 
 The proposed data visualization is found at the following URL:<br>
 *https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DatavizMakeover3_16162605639950/OverviewDashboard?publish=yes*
@@ -155,8 +163,11 @@ knitr::include_graphics("OverviewScreenshot.jpg")
 knitr::include_graphics("CountryDetailScreenshot.jpg")
 ```
 
-# D. Preparation of Data Visualization
+[Back to Top](#Top)
+
 <a name="PartD"></a>
+
+# D. Preparation of Data Visualization
 
 ## D1. Preparation of Dataset
 
@@ -544,10 +555,11 @@ knitr::include_graphics("D2_2_6b.png")
 
 
 
+[Back to Top](#Top)
 
+<a name="PartE"></a>
 
 # E. Key Observations from the visualization prepared
-<a name="PartE"></a>
 
 **1. Philippines has the most occurrences of political events while Laos has the least.**<br>
 Philippines has the greatest number of political events while Laos has the lowest number of political events as seen in the following screenshot below where Philippines has the darkest hue of red and Laos has the lightest hue.
@@ -627,5 +639,5 @@ In terms of geographical patterns of the Demonstration Events, there was a sligh
 knitr::include_graphics("E5b.gif")
 ```
 
-
+[Back to Top](#Top)
 

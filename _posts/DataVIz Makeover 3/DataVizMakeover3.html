@@ -1446,10 +1446,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1 id="background">Background</h1>
 <p>A data visualization was created to reveal the spatio-temporal patterns of armed conflict in selected South-east Asia countries between 2015 to 2020. The visualization is based on data provided by The Armed Conflict Location &amp; Event Data Project (ACLED) at <a href="https://acleddata.com/#/dashboard" class="uri">https://acleddata.com/#/dashboard</a>.</p>
 <p>The purpose of this post is to critique the current visualization and to propose an alternative visualization and interactive techniques to improve the current design.</p>
+<p><a name="Top"></a></p>
 <h3 id="contents">Contents</h3>
 <p><a href="#PartA">A. Critique of Data Visualization Provided</a><br> <a href="#PartB">B. Proposed Alternative Visualization and Interactive Techniques</a><br> <a href="#PartC">C. Proposed Data Visualization</a><br> <a href="#PartD">D. Preparation of Data Visualization</a><br> <a href="#PartE">E. Key Observations from the visualization prepared</a><br></p>
+<p><a name="PartA"></a></p>
 <h1 id="a.-critique-of-data-visualization-provided">A. Critique of Data Visualization Provided</h1>
-<p><a name="PartA"></a> The original visualization created is shown below.</p>
+<p>The original visualization created is shown below.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:pressure"></span>
 <img src="Original_Visualization.jpg" alt="Original Data Visualization" width="100%" />
@@ -1475,8 +1477,9 @@ Figure 1: Original Data Visualization
 <p><strong>2. Visualization should allow user to select desired time periods to be displayed.</strong><br> The visualization should provide interactivity for the user to select the time periods for which the data is displayed, for deeper analysis of changes in events over time. Both the spatial chart and line charts should respond to changes in selected time periods and display the relevant data.</p>
 <p><strong>3. Visualization could allow data of multiple selected countries to be displayed.</strong><br> The visualization should be able to allow the user to view the data for multiple selected countries in the event that comparison between countries is desired. For the time series chart on the right, individual countries’ data should be a different line series.</p>
 <p><strong>4. Details of sub-regions to be displayed on mouse-over.</strong><br> When user mouse-overs a particular sub-region of the selected country, details specific to the sub-region (e.g. sub-region name, number of various events taken place during the time period) should appear. This will provide greater understanding of how the occurrence of events are distributed geographically within the selected country.</p>
-<h1 id="b.-proposed-alternative-visualization-and-interactive-techniques">B. Proposed Alternative Visualization and Interactive Techniques</h1>
+<p><a href="#Top">Back to Top</a></p>
 <p><a name="PartB"></a></p>
+<h1 id="b.-proposed-alternative-visualization-and-interactive-techniques">B. Proposed Alternative Visualization and Interactive Techniques</h1>
 <h2 id="description-of-and-rationale-for-proposed-visualization">Description of and Rationale for Proposed Visualization</h2>
 <p>The visualization is designed to have 2 dashboards, an Overview dashboard of countries involved in the data, and a Country Details dashboard to allow in depth view of events by country.<br></p>
 <h2 id="overview-dashboard">1. Overview Dashboard</h2>
@@ -1508,8 +1511,9 @@ Figure 3: Sketch of proposed Country Details dashboard
 <p><strong>6. The line graphs on the right show the number of instances for each event type for the specified years</strong><br> The line graphs on the right display the numbers of events by event types that had occurred year to year for the selected country.</p>
 <p><strong>7. Tool for viewing the data year by year will allow users to observe the changes and developments in events over time.</strong> By including a tool to allow users to playback or step through manually each year, while observing the corresponding points on the map and line charts, users may be able to spot temporal or spatial patterns in the data.</p>
 <p><strong>8. Inclusion of event details in the tooltips.</strong><br> Tooltips will be created so that when users mouse-over each event on the map, the event details such as location of the event, number of fatalities and notes of the events are displayed.</p>
-<h1 id="c.-proposed-data-visualization">C. Proposed Data Visualization</h1>
+<p><a href="#Top">Back to Top</a></p>
 <p><a name="PartC"></a></p>
+<h1 id="c.-proposed-data-visualization">C. Proposed Data Visualization</h1>
 <p>The proposed data visualization is found at the following URL:<br> <em><a href="https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DatavizMakeover3_16162605639950/OverviewDashboard?publish=yes" class="uri">https://public.tableau.com/profile/daniel.lin.yongyan#!/vizhome/DatavizMakeover3_16162605639950/OverviewDashboard?publish=yes</a></em> <br><br></p>
 <p>A <strong>screenshot</strong> of the dashboards are as follow.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -1528,8 +1532,9 @@ Figure 5: Proposed Country Details dashboard
 </p>
 </div>
 </div>
-<h1 id="d.-preparation-of-data-visualization">D. Preparation of Data Visualization</h1>
+<p><a href="#Top">Back to Top</a></p>
 <p><a name="PartD"></a></p>
+<h1 id="d.-preparation-of-data-visualization">D. Preparation of Data Visualization</h1>
 <h2 id="d1.-preparation-of-dataset">D1. Preparation of Dataset</h2>
 <h3 id="d1.1-selection-of-variables-from-acled-dataset-provided">D1.1 Selection of variables from ACLED dataset provided</h3>
 <p>The following variables were removed using EXCEL (right-click columns &gt; delete) as they would not be used in the visualization – TIME_PRECISION, REGION and TIMESTAMP.</p>
@@ -2077,8 +2082,9 @@ Figure 64: Select Circle colour and border
 </p>
 </div>
 </div>
-<h1 id="e.-key-observations-from-the-visualization-prepared">E. Key Observations from the visualization prepared</h1>
+<p><a href="#Top">Back to Top</a></p>
 <p><a name="PartE"></a></p>
+<h1 id="e.-key-observations-from-the-visualization-prepared">E. Key Observations from the visualization prepared</h1>
 <p><strong>1. Philippines has the most occurrences of political events while Laos has the least.</strong><br> Philippines has the greatest number of political events while Laos has the lowest number of political events as seen in the following screenshot below where Philippines has the darkest hue of red and Laos has the lightest hue.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="figure"><span id="fig:pressure6"></span>
@@ -2187,6 +2193,7 @@ Figure 76: Outward shift in concentration of Demonstration Events
 </p>
 </div>
 </div>
+<p><a href="#Top">Back to Top</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
